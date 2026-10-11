@@ -1,0 +1,15 @@
+Mới:
+- Ảnh bìa động từ Apple Music
+- Hiệu ứng âm thanh Delay và Reverb
+- Đổi ảnh bìa playlist đã đồng bộ lên YouTube
+Cải thiện:
+- Phát nhạc ổn định hơn
+- Nghe cùng nhau kết nối ổn định hơn
+- Thông báo trên máy tính
+Sửa lỗi:
+- Lời không đồng bộ làm mờ cả trang
+- SponsorBlock quên mục đã bỏ chọn
+- SponsorBlock lặp vô hạn ở đoạn quá ngắn
+- Mô tả cài đặt dài bị cắt mất
+- Ảnh bìa nhảy khi hàng chờ dài thêm
+- Chỉnh cao độ trên Linux

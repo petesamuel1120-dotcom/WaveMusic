@@ -1,0 +1,391 @@
+# ProGuard's return-type specialization narrows ActualParagraph()'s declared return type
+# from the Paragraph interface down to its only impl (SkiaParagraph). The bytecode still
+# pushes a Paragraph-typed value, so JVM 21's verifier rejects it at runtime with
+# "VerifyError: Bad return type" the moment any Text() renders (androidx.compose.ui.text).
+# code/allocation/variable + method/inlining: after inlining, ProGuard re-packs local
+# variable slots and emits a StackMapTable that disagrees with the actual frame on 2-slot
+# longs/doubles ("VerifyError: Inconsistent stackmap frames ... top not assignable to
+# long") the moment a large Composable class loads — hit at startup on the Windows
+# release build. Known upstream bug, still unfixed as of ProGuard 7.9.1:
+# https://github.com/Guardsquare/proguard/issues/443 (Compose Desktop, same frames)
+# https://github.com/Guardsquare/proguard/issues/302 (inlining-induced verify errors)
+# Shrinking, obfuscation, class-merging and every other optimization stay on.
+-optimizations !method/specialization/*,!code/allocation/variable,!method/inlining/*
+
+-keepclasseswithmembers class * {
+    native <methods>;
+}
+
+# Nucleus notification backends call these Kotlin entry points from JNI by their exact class and
+# method names. Keeping only classes that declare native methods preserves the outward JNI calls,
+# but ProGuard still removes callbacks such as onNotificationSettings/onAuthorizationResult and
+# strips their model accessors. The permission state then remains CHECKING and every notification
+# stays queued forever in release builds.
+-keep class dev.nucleusframework.notification.** { *; }
+-dontwarn dev.nucleusframework.notification.**
+
+-keep class com.sun.jna.** { *; }
+-keep class * implements com.sun.jna.** { *; }
+-keepclassmembers class * extends com.sun.jna.Structure {
+    public *;
+}
+
+# Ktor
+-keep class io.ktor.** { *; }
+-keepclassmembers class io.ktor.** { volatile <fields>; }
+-keep class io.ktor.client.engine.cio.** { *; }
+-dontwarn kotlinx.atomicfu.**
+-dontwarn io.netty.**
+-dontwarn com.typesafe.**
+-dontwarn org.slf4j.**
+-dontnote io.ktor.**
+-dontnote org.slf4j.**
+-dontnote kotlinx.serialization.**
+
+# Skiko / Skia + Compose AWT interop. ProGuard obfuscation renames these classes, which
+# breaks compose.interop.blending on the transparent desktop window — Canvas/video then
+# render see-through (you can see the desktop behind them). Keep them un-obfuscated.
+-keep class org.jetbrains.skiko.** { *; }
+-keep class org.jetbrains.skia.** { *; }
+-keep class androidx.compose.ui.awt.** { *; }
+-keep class androidx.compose.ui.interop.** { *; }
+-dontwarn org.jetbrains.skiko.**
+-dontwarn org.jetbrains.skia.**
+
+# compottie (Lottie renderer) draws via skiko (PlatformShader.skiko, SkikoPathBuilder).
+# On release, proguard obfuscation mangles its internal classes so the renderer runs but
+# paints nothing — the animation stays blank with no crash. Keep them un-obfuscated.
+-keep class io.github.alexzhirkevich.compottie.** { *; }
+-dontwarn io.github.alexzhirkevich.compottie.**
+
+# Okhttp3
+-keep class okhttp3.** { *; }
+-keep class okio.** { *; }
+-dontwarn okhttp3.**
+-dontwarn okio.**
+
+# VLC (vlcj)
+-keep class uk.co.caprica.vlcj.** { *; }
+-dontwarn uk.co.caprica.vlcj.**
+
+# JavaFX
+-keep class javafx.** { *; }
+-keep class com.sun.javafx.** { *; }
+-dontwarn javafx.**
+-dontwarn com.sun.javafx.**
+
+# Probuf
+-keep class com.google.protobuf.** { *; }
+-dontwarn com.google.protobuf.**
+
+-keep class nl.adaptivity.xmlutil.** { *; }
+-dontwarn nl.adaptivity.xmlutil.**
+
+-keep class org.jsoup.** { *; }
+-dontwarn org.jsoup.**
+
+-keep class com.maxrave.domain.data.model.** { *; }
+-keep class com.mohamedrejeb.ksoup.html.** { *; }
+-keep class org.schabi.newpipe.extractor.downloader.** { *; }
+-keep class dev.maxrave.pipepipe.extractor.downloader.** { *; }
+
+# Koin
+-keep class org.koin.core.** { *; }
+-dontwarn org.koin.**
+
+# Default rules
+-keep class kotlinx.coroutines.CoroutineExceptionHandler
+-keep class kotlinx.coroutines.internal.MainDispatcherFactory
+
+# kotlinx.coroutines full keep — R8 `optimize` flattens the Job hierarchy
+# and emits illegal `invokespecial` for `Job.cancel()` reached via
+# Supervisor → JobSupport → ChildJob → Job (indirect superinterface).
+# JVM 21 strict verifier rejects this with VerifyError. Keep the whole
+# package plus its volatile fields (compiler-generated state machines).
+-keep class kotlinx.coroutines.** { *; }
+-keepclassmembernames class kotlinx.coroutines.** {
+    volatile <fields>;
+}
+-keepclassmembers class kotlinx.coroutines.flow.internal.ChannelFlow* { <fields>; }
+-dontwarn kotlinx.coroutines.**
+
+# androidx.room — Room generates classes that delegate to coroutines.
+# Same R8 over-optimization risk hits Room's invalidation tracker (uses
+# CoroutineScope internally). Keep everything to be safe.
+-keep class androidx.room.** { *; }
+-keep interface androidx.room.** { *; }
+-keepclassmembers class androidx.room.** { *; }
+-dontwarn androidx.room.**
+
+# androidx.sqlite — Room depends on it; same precaution.
+-keep class androidx.sqlite.** { *; }
+-keep interface androidx.sqlite.** { *; }
+-dontwarn androidx.sqlite.**
+# Keep `Companion` object fields of serializable classes.
+# This avoids serializer lookup through `getDeclaredClasses` as done for named companion objects.
+-if @kotlinx.serialization.Serializable class **
+-keepclassmembers class <1> {
+    static <1>$Companion Companion;
+}
+
+# Keep `serializer()` on companion objects (both default and named) of serializable classes.
+-if @kotlinx.serialization.Serializable class ** {
+    static **$* *;
+}
+-keepclassmembers class <2>$<3> {
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+# Keep `INSTANCE.serializer()` of serializable objects.
+-if @kotlinx.serialization.Serializable class ** {
+    public static ** INSTANCE;
+}
+-keepclassmembers class <1> {
+    public static <1> INSTANCE;
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+# @Serializable and @Polymorphic are used at runtime for polymorphic serialization.
+-keepattributes RuntimeVisibleAnnotations,AnnotationDefault
+
+# Don't print notes about potential mistakes or omissions in the configuration for kotlinx-serialization classes
+# See also https://github.com/Kotlin/kotlinx.serialization/issues/1900
+-dontnote kotlinx.serialization.**
+
+# Serialization core uses `java.lang.ClassValue` for caching inside these specified classes.
+# If there is no `java.lang.ClassValue` (for example, in Android), then R8/ProGuard will print a warning.
+# However, since in this case they will not be used, we can disable these warnings
+
+-dontwarn org.slf4j.impl.StaticLoggerBinder
+-dontwarn kotlinx.serialization.internal.ClassValueReferences
+-keep class com.maxrave.simpmusic.data.model.** { *; }
+-keep class com.maxrave.simpmusic.extension.AllExtKt { *; }
+-keep class com.maxrave.simpmusic.extension.AllExtKt$* { *; }
+-keep class com.maxrave.kotlinytmusicscraper.extension.MapExtKt$* { *; }
+
+## Removes all Logs as they cause perfomance issues in prod
+#-assumenosideeffects class android.util.Log {
+#    public static int w(...);
+#    public static int e(...);
+#    public static int i(...);
+#    public static int d(...);
+#    public static int v(...);
+#}
+## Rules for NewPipeExtractor
+-keep class org.schabi.newpipe.extractor.timeago.patterns.** { *; }
+-keep class dev.maxrave.pipepipe.extractor.timeago.patterns.** { *; }
+-keep class org.mozilla.javascript.** { *; }
+-dontwarn org.mozilla.javascript.tools.**
+# Please add these rules to your existing keep rules in order to suppress warning
+# This is generated automatically by the Android Gradle plugin.
+-dontwarn java.beans.BeanDescriptor
+-dontwarn java.beans.BeanInfo
+-dontwarn java.beans.IntrospectionException
+-dontwarn java.beans.Introspector
+-dontwarn java.beans.PropertyDescriptor
+# Retrofit does reflection on generic parameters. InnerClasses is required to use Signature and
+# EnclosingMethod is required to use InnerClasses.
+-keepattributes Signature, InnerClasses, EnclosingMethod
+
+# Retrofit does reflection on method and parameter annotations.
+-keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
+
+# Keep annotation default values (e.g., retrofit2.http.Field.encoded).
+-keepattributes AnnotationDefault
+
+# Retain service method parameters when optimizing.
+-keepclassmembers,allowshrinking,allowobfuscation interface * {
+    @retrofit2.http.* <methods>;
+}
+
+# Ignore annotation used for build tooling.
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+
+# Ignore JSR 305 annotations for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# Guarded by a NoClassDefFoundError try/catch and only used when on the classpath.
+-dontwarn kotlin.Unit
+
+# Top-level functions that can only be used by Kotlin.
+-dontwarn retrofit2.KotlinExtensions
+-dontwarn retrofit2.KotlinExtensions$*
+
+# With R8 full mode, it sees no subtypes of Retrofit interfaces since they are created with a Proxy
+# and replaces all potential values with null. Explicitly keeping the interfaces prevents this.
+-if interface * { @retrofit2.http.* <methods>; }
+-keep,allowobfuscation interface <1>
+
+# Keep inherited services.
+-if interface * { @retrofit2.http.* <methods>; }
+-keep,allowobfuscation interface * extends <1>
+
+# With R8 full mode generic signatures are stripped for classes that are not
+# kept. Suspend functions are wrapped in continuations where the type argument
+# is used.
+-keep,allowobfuscation,allowshrinking class kotlin.coroutines.Continuation
+
+# R8 full mode strips generic signatures from return types if not kept.
+-if interface * { @retrofit2.http.* public *** *(...); }
+-keep,allowoptimization,allowshrinking,allowobfuscation class <3>
+
+# With R8 full mode generic signatures are stripped for classes that are not kept.
+-keep,allowobfuscation,allowshrinking class retrofit2.Response
+# JSR 305 annotations are for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# Animal Sniffer compileOnly dependency to ensure APIs are compatible with older versions of Java.
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+
+# OkHttp platform used only on JVM and when Conscrypt and other security providers are available.
+# May be used with robolectric or deliberate use of Bouncy Castle on Android
+-dontwarn okhttp3.internal.platform.**
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**
+-dontwarn okhttp3.internal.Util
+
+-keep class com.liskovsoft.** { *; }
+-keep interface com.liskovsoft.** { *; }
+-keep class com.eclipsesource.v8.** { *; }
+-keep class com.maxrave.kotlinytmusicscraper.** { *; }
+
+-dontwarn javax.script.AbstractScriptEngine
+-dontwarn javax.script.Bindings
+-dontwarn javax.script.Compilable
+-dontwarn javax.script.CompiledScript
+-dontwarn javax.script.Invocable
+-dontwarn javax.script.ScriptContext
+-dontwarn javax.script.ScriptEngine
+-dontwarn javax.script.ScriptEngineFactory
+-dontwarn javax.script.ScriptException
+-dontwarn javax.script.SimpleBindings
+-dontwarn jdk.dynalink.CallSiteDescriptor
+-dontwarn jdk.dynalink.DynamicLinker
+-dontwarn jdk.dynalink.DynamicLinkerFactory
+-dontwarn jdk.dynalink.NamedOperation
+-dontwarn jdk.dynalink.Namespace
+-dontwarn jdk.dynalink.NamespaceOperation
+-dontwarn jdk.dynalink.Operation
+-dontwarn jdk.dynalink.RelinkableCallSite
+-dontwarn jdk.dynalink.StandardNamespace
+-dontwarn jdk.dynalink.StandardOperation
+-dontwarn jdk.dynalink.linker.GuardedInvocation
+-dontwarn jdk.dynalink.linker.GuardingDynamicLinker
+-dontwarn jdk.dynalink.linker.LinkRequest
+-dontwarn jdk.dynalink.linker.LinkerServices
+-dontwarn jdk.dynalink.linker.TypeBasedGuardingDynamicLinker
+-dontwarn jdk.dynalink.linker.support.CompositeTypeBasedGuardingDynamicLinker
+-dontwarn jdk.dynalink.linker.support.Guards
+-dontwarn jdk.dynalink.support.ChainedCallSite
+
+-keep class org.apache.commons.io.** { *; }
+
+#YtDlp
+-keep class com.yausername.** { *; }
+-keep class org.apache.commons.compress.archivers.zip.** { *; }
+-keepattributes SourceFile
+
+## Rules for NewPipeExtractor
+-keep class org.schabi.newpipe.extractor.** { *; }
+-keep class org.schabi.newpipe.extractor.timeago.patterns.** { *; }
+-keep class dev.maxrave.pipepipe.extractor.** { *; }
+-keep class dev.maxrave.pipepipe.extractor.timeago.patterns.** { *; }
+-keep class org.mozilla.javascript.** { *; }
+-keep class org.mozilla.classfile.ClassFileWriter
+-dontwarn org.mozilla.javascript.tools.**
+# Please add these rules to your existing keep rules in order to suppress warning
+# This is generated automatically by the Android Gradle plugin.
+-dontwarn java.beans.BeanDescriptor
+-dontwarn java.beans.BeanInfo
+-dontwarn java.beans.IntrospectionException
+-dontwarn java.beans.Introspector
+-dontwarn java.beans.PropertyDescriptor
+
+-dontwarn com.maxrave.data.di.loader.LoaderKt
+-dontwarn com.maxrave.media3.ui.MediaPlayerViewKt
+
+-keep class com.maxrave.data.di.loader.LoaderKt { *; }
+-keep class com.maxrave.data.mapping.MappingKt { *; }
+-keep class com.maxrave.data.extension.** { *; }
+-keep class com.maxrave.data.di.** { *; }
+
+-keep class com.maxrave.kotlinytmusicscraper.** { *; }
+
+-keep class org.simpmusic.lyrics.parser.** { *; }
+-keep class org.simpmusic.lyrics.models.** { *; }
+-keep class org.simpmusic.nowplayingcenter.** { *; }
+-keep class io.github.selemba1000.** { *; }
+-keep class com.simpmusic.lyrics.parser.** { *; }
+
+# dbus-java (used by JMTC/NPYC for Linux MPRIS)
+-keep class org.freedesktop.dbus.** { *; }
+-keep class com.github.hypfvieh.** { *; }
+-dontwarn org.freedesktop.dbus.**
+-dontwarn com.github.hypfvieh.**
+# Keep ServiceLoader entries for dbus-java transport discovery
+-keepnames class org.freedesktop.dbus.spi.transport.ITransportProvider
+-keep class * implements org.freedesktop.dbus.spi.transport.ITransportProvider { *; }
+-adaptresourcefilecontents META-INF/services/**
+-keepnames class * implements java.util.ServiceLoader$Provider
+
+-keep class com.google.re2j.** { *; }
+-dontwarn com.google.re2j.Matcher
+-dontwarn com.google.re2j.Pattern
+
+# Wire (used by NewPipe extractor) - AndroidMessage references Android classes not available on Desktop
+-dontwarn android.os.Parcelable
+-dontwarn android.os.Parcelable$Creator
+-dontwarn android.os.Parcel
+
+# Wire/nanojson descriptor classes referenced by Brave extractor's generated proto adapters and
+# YoutubeStreamExtractor helpers. Keep so proguard can resolve method signatures.
+-keep class com.squareup.wire.** { *; }
+-keep interface com.squareup.wire.** { *; }
+-dontwarn com.squareup.wire.**
+-keep class com.grack.nanojson.** { *; }
+-dontwarn com.grack.nanojson.**
+
+# org.json (JSON-Java): Android-provided, added as an explicit JVM-desktop dependency because
+# PipePipeExtractor references org.json.* (comment/stream extractors). Keep it.
+-keep class org.json.** { *; }
+
+# Brave bundles BitChute / json2java4nanojson model classes referenced by extractor constructors
+# kept via `-keep class org.schabi.newpipe.extractor.** { *; }`. Without explicit keeps, proguard
+# can't resolve the descriptor types and aborts with "unresolved reference" warnings.
+-keep class com.github.bravenewpipe.** { *; }
+-dontwarn com.github.bravenewpipe.**
+
+# PipePipe was compiled against Rhino 1.7.13 (which had org.mozilla.javascript.ObjToIntMap), but
+# Brave brings Rhino 1.8.1 where that class was removed. Gradle picks the higher version, leaving
+# PipePipe's TokenStream with a stale reference. The code path is unused for our YouTube usage,
+# so suppress the warning instead of pinning Rhino back.
+-dontwarn org.mozilla.javascript.ObjToIntMap
+
+-keep class * extends androidx.room.RoomDatabase { <init>(); }
+-keep class androidx.datastore.preferences.** { *; }
+
+# cache2k references kotlin.annotations.jvm.* (compile-only) at annotation level
+-dontwarn kotlin.annotations.jvm.**
+-dontwarn org.cache2k.**
+
+# Compose MP 1.11.0 graphics API breaking change — Skiko Shader/Paint method
+# signatures changed. Haze 1.7.2 and Compottie 2.1.0 still reference the old
+# signatures (no newer versions available yet). Suppress so ProGuard does not
+# abort. Runtime risk: NoSuchMethodError if affected code paths are hit.
+-dontwarn dev.chrisbanes.haze.**
+-keep class io.github.alexzhirkevich.compottie.**  { *; }
+# Compottie's skiko shader helper references org.jetbrains.skia.GradientStyle, removed in the current
+# Skiko. Class is gone (can't be kept/added), so suppress the unresolved-reference warning.
+-dontwarn io.github.alexzhirkevich.compottie.**
+
+# com.kyant.backdrop (liquid glass) was compiled against Skiko 0.144.x and references
+# RuntimeShaderBuilder.makeShader$default, whose signature changed in Skiko 0.148.2 (pulled by
+# compose-bom 2026.06 / coil3 3.5.0 / compottie 2.2.4). The method is gone, so ProGuard can't
+# resolve it and aborts. Liquid glass is not rendered on desktop, so the code path is never hit —
+# suppress the unresolved-reference warning. (Same approach as compottie/haze above.)
+-dontwarn com.kyant.backdrop.**
+
+# JNA references the signature-polymorphic java.lang.invoke.MethodHandle.invoke(...) overloads, which
+# ProGuard can't resolve as concrete methods. JNA itself is kept above; suppress these warnings.
+-dontwarn com.sun.jna.**

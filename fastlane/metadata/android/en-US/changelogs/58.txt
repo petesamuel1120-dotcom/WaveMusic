@@ -1,0 +1,15 @@
+New:
+- Animated album art from Apple Music
+- Delay and Reverb audio effects
+- Change the cover of a synced YouTube playlist
+Improved:
+- More reliable streaming
+- Listen Together connects more reliably
+- Desktop notifications
+Fixed:
+- Unsynced lyrics blurring the whole sheet
+- SponsorBlock forgetting unticked categories
+- SponsorBlock looping on very short segments
+- Long setting descriptions cut off
+- Artwork jumping as the queue grows
+- Pitch control on Linux desktop

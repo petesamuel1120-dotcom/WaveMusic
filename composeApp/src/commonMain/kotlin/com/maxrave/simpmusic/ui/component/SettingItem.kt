@@ -1,0 +1,120 @@
+package com.maxrave.simpmusic.ui.component
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Switch
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.maxrave.simpmusic.extension.greyScale
+import com.maxrave.simpmusic.ui.theme.typo
+
+@Composable
+fun SettingItem(
+    title: String = "Title",
+    subtitle: String = "Subtitle",
+    smallSubtitle: Boolean = false,
+    isEnable: Boolean = true,
+    onClick: (() -> Unit)? = null,
+    switch: Pair<Boolean, ((Boolean) -> Unit)>? = null,
+    otherView: @Composable (() -> Unit)? = null,
+) {
+    // isEnable only greys the row out; it deliberately writes nothing.
+    //
+    // There used to be an onDisable callback fired from a LaunchedEffect(isEnable) here, to clear a
+    // login-gated child flag when its gate went false (#2157, #2064). It was wrong twice over. The
+    // gate is a StateFlow filled asynchronously from DataStore, so the FIRST composition always sees
+    // its "not loaded yet" value and read it as "signed out" — sync_follow_to_youtube was erased on
+    // every visit to Settings. And it only ever ran if the user opened Settings and scrolled to the
+    // row at all, so it could not do the job it existed for. Clearing a child flag now belongs to the
+    // logout that invalidates it (SettingsViewModel: setSpotifyLogIn, logOutDiscord, logOutLastfm,
+    // setUsedAccount, logOutAllYouTube, setAIApiKey), which is a real event and cannot misfire.
+    Box(
+        Modifier
+            .then(
+                if (onClick != null && isEnable) {
+                    Modifier.clickable { onClick.invoke() }
+                } else {
+                    Modifier
+                },
+            ).then(
+                if (!isEnable) {
+                    Modifier.greyScale()
+                } else {
+                    Modifier
+                },
+            ),
+    ) {
+        Row(
+            modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .padding(
+                        vertical = 8.dp,
+                        horizontal = 24.dp,
+                    ),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Column(
+                modifier = Modifier.weight(1f),
+                horizontalAlignment = Alignment.Start,
+            ) {
+                Text(
+                    text = title,
+                    style =
+                        typo().labelMedium.let {
+                            if (!isEnable) it.greyScale() else it
+                        },
+                    color = MaterialTheme.colorScheme.onSurface,
+                )
+                Spacer(Modifier.height(4.dp))
+                Text(
+                    text = subtitle,
+                    style =
+                        if (smallSubtitle) {
+                            typo().bodySmall.let {
+                                if (!isEnable) it.greyScale() else it
+                            }
+                        } else {
+                            typo().bodyMedium.let {
+                                if (!isEnable) it.greyScale() else it
+                            }
+                        },
+                    // No maxLines: with a cap and no overflow set, Compose defaults to Clip and cut
+                    // the second line through the middle of the glyphs, with no ellipsis to show
+                    // anything was missing. A settings list scrolls vertically anyway, and these
+                    // descriptions are translated — German and Vietnamese run longer than the
+                    // English they were sized against, so any fixed cap just moves the problem to
+                    // another language.
+                )
+
+                otherView?.let {
+                    Spacer(Modifier.height(16.dp))
+                    it.invoke()
+                }
+            }
+            if (switch != null) {
+                Spacer(Modifier.width(10.dp))
+                Switch(
+                    modifier = Modifier.wrapContentWidth(),
+                    checked = switch.first,
+                    onCheckedChange = {
+                        switch.second.invoke(it)
+                    },
+                    enabled = isEnable,
+                )
+            }
+        }
+    }
+}
