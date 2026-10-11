@@ -54,13 +54,13 @@ The project is built with Kotlin and Compose Multiplatform, with a focus on a po
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/07-podcast-discovery.png" alt="Podcast discovery" width="240" />
+  <img src="docs/screenshots/10-personalize.png" alt="Wave Music interface customization" width="240" />
   <img src="docs/screenshots/08-podcast-show.png" alt="Podcast show details" width="240" />
   <img src="docs/screenshots/11-music-videos.png" alt="Music videos" width="240" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/10-personalize.png" alt="Wave Music interface customization" width="240" />
+
   <img src="docs/screenshots/12-landscape-mode.png" alt="Wave Music landscape player" width="420" />
 </p>
 
