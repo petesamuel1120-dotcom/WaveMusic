@@ -63,11 +63,28 @@ The project is built with Kotlin and Compose Multiplatform.
   <img src="docs/screenshots/12-landscape-mode.png" alt="Wave Music landscape player" width="420" />
 </p>
 
-## Technology
+## Legal Disclaimer & Terms of Use
 
-- Kotlin
-- Compose Multiplatform
-- Gradle
+### 1. 100% Free, Open-Source & Strictly Non-Commercial
+Wave Music is a free and open-source project developed for educational purposes, personal use, and experimentation. We do not sell the application or monetize it in any way. Wave Music contains no advertisements, premium features, subscriptions, or hidden fees.
+
+### 2. Support Content Creators
+We respect the hard work of artists, musicians, and content creators. We encourage users to support their favorite artists through legitimate channels, including subscribing to YouTube Premium where available. Supporting official platforms helps sustain the creators and services that make music accessible.
+
+Wave Music is an independent project built for music lovers, developers, and enthusiasts. It is not intended to undermine creators' rights or deprive them of legitimate revenue.
+
+### 3. No Hosting of Copyrighted Material
+Wave Music does not host, upload, or distribute copyrighted audio, video, or other media on its own servers. Content accessed through the application is provided by third-party platforms, such as YouTube, and remains subject to the ownership rights, terms, and policies applicable to that content.
+
+Wave Music acts as a client for accessing publicly available content. Its availability does not grant users any additional rights to download, reproduce, or redistribute copyrighted material.
+
+### 4. User Responsibility & Legal Contact
+Wave Music does not host media files on its own servers and therefore cannot directly remove content hosted by third-party platforms. Copyright holders should contact the relevant hosting platform regarding media hosted on its services.
+
+For concerns regarding the Wave Music application or its open-source code, please contact:
+
+Email: petesamuel1120@gmail.com
+
 
 ## Credits and acknowledgments
 
