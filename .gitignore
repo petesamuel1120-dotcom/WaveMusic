@@ -1,0 +1,66 @@
+```gitignore
+# Gradle
+.gradle/
+.kotlin/
+**/build/
+
+# Android and native build artifacts
+.externalNativeBuild/
+.cxx/
+captures/
+local.properties
+**/local.properties
+/app/release/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and crash dumps
+*.log
+*.hprof
+
+# Signing keys and credentials
+*.jks
+*.keystore
+keystore.properties
+/simpmusic.jks
+sentry.properties
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+.mcp.json
+/.claude/settings.local.json
+
+# Downloaded or generated native libraries
+/ffmpeg-kit/build/
+/mpv-natives/
+/composeApp/kcef-bundle/
+
+# Generated Conveyor files
+/desktopApp/generated.conveyor.conf
+/output/
+
+# Agent scratch files
+.omc/
+**/.omc/
+
+# Local development files
+ign.md
+.docs
+
+# Optional local-only configuration
+# Uncomment only if these files should never be versioned:
+# crowdin.yml
+# .codex-tools/
+```
+
+/work/

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Cold-start / splash background only — Compose paints everything after the first frame.
+
+        These resource colors follow Android's day/night configuration during process creation,
+        before Compose reads the user's theme preference.
+    -->
+    <style name="Theme.WaveMusic" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+Suggested GitHub repository description:
+
+A modern music and podcast app with synchronized lyrics, AI translation, library management, and a customizable interface.
+
+Suggested repository topics:
+`music-player` `podcasts` `kotlin` `compose-multiplatform` `android` `lyrics` `music-discovery`
+
+The full README is in `README.md`. The banner and Aurora screenshots are under `docs/`.
