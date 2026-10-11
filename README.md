@@ -26,18 +26,20 @@ The project is built with Kotlin and Compose Multiplatform.
 
 ## Features
 
-- **Music discovery** — explore music and browse artists.
-- **Personal library** — access favorites, playlists, listening history, and saved content in one place.
-- **Now playing and queue** — control playback and manage what plays next.
-- **Synchronized lyrics** — follow lyrics while listening.
-- **AI lyrics translation** — configure an AI provider and translation language.
-- **Podcasts** — discover shows and browse show details and episodes.
-- **Music videos** — explore music-video content.
-- **Landscape player** — a dedicated landscape listening experience.
-- **Interface customization** — adjust the look and feel, colors, and available visual effects, including liquid glass.
-- **Personalization settings** — shape the app around your preferences.
+## Features
 
-> Feature availability may depend on the current build and the services or API providers used by the app.
+- **Music discovery**: Find music, explore artists, and discover new tracks.
+- **Personal library**: Keep your favorites, playlists, listening history, and saved content organized.
+- **Now playing and queue**: Control playback and manage what plays next.
+- **Synchronized lyrics**: Follow along with lyrics while listening.
+- **AI lyrics translation**: Translate lyrics using a configured AI provider and your preferred language.
+- **Podcasts**: Discover shows, view show details, and browse episodes.
+- **Music videos**: Explore music-video content.
+- **Landscape player**: A dedicated player layout for landscape listening.
+- **Interface customization**: Adjust colors, appearance, and visual effects, including liquid glass.
+- **Personalization settings**: Customize the app to suit your preferences.
+
+*Some features may vary between builds or depend on external services and API providers.*
 
 ## Screenshots
 
