@@ -20,9 +20,9 @@ A modern music app focused on discovery, a personal library, synchronized lyrics
 
 ## About
 
-Wave Music is a music and podcast app designed to make listening feel personal. Browse and discover music, keep your library organized, follow lyrics, explore podcasts, and tune the interface to your taste.
+Wave Music is a music and podcast app designed to make listening feel personal. Browse and discover music, keep your library organized, follow lyrics, tune in to your favorite podcasts, and tweak the interface to your taste.
 
-The project is built with Kotlin and Compose Multiplatform, with a focus on a polished dark interface, expressive color, and optional liquid-glass styling.
+The project is built with Kotlin and Compose Multiplatform.
 
 ## Features
 
