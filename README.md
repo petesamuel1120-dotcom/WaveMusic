@@ -72,12 +72,14 @@ The project is built with Kotlin and Compose Multiplatform, with a focus on a po
 
 ## Credits and acknowledgments
 
-Open-Source Acknowledgments
-ArchiveTune is made possible by the work of many open-source projects and communities:
+Music Wave is made possible by the work of many open-source projects and communities:
 
 Metrolist by Mostafa Alagamy for the base framework.
+
 SimpMusic by maxrave-dev for the lyrics API provider.
+
 BetterLyrics for word-by-word lyrics, unison, KuGou, LRCLIB. and artwork provider support.
+
 Material Color Utilities
 
 These acknowledgments do not imply affiliation with, endorsement by, or sponsorship from these projects. Their names and original work belong to their respective authors and contributors.
