@@ -94,7 +94,7 @@ SimpMusic by maxrave-dev for the base framework and lyrics API provider.
 
 BetterLyrics for word-by-word lyrics, unison, KuGou, LRCLIB. and artwork provider support.
 
-Material Color Utilities
+Material Color Utilities.
 
 These acknowledgments do not imply affiliation with, endorsement by, or sponsorship from these projects. Their names and original work belong to their respective authors and contributors.
 
