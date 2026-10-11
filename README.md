@@ -26,7 +26,6 @@ The project is built with Kotlin and Compose Multiplatform.
 
 ## Features
 
-- **Music discovery**: Find music, explore artists, and discover new tracks.
 - **Personal library**: Keep your favorites, playlists, listening history, and saved content organized.
 - **Now playing and queue**: Control playback and manage what plays next.
 - **Synchronized lyrics**: Follow along with lyrics while listening.
