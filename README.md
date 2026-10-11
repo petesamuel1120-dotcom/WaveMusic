@@ -90,9 +90,7 @@ Email: petesamuel1120@gmail.com
 
 Music Wave is made possible by the work of many open-source projects and communities:
 
-Metrolist by Mostafa Alagamy for the base framework.
-
-SimpMusic by maxrave-dev for the lyrics API provider.
+SimpMusic by maxrave-dev for the base framework and lyrics API provider.
 
 BetterLyrics for word-by-word lyrics, unison, KuGou, LRCLIB. and artwork provider support.
 
