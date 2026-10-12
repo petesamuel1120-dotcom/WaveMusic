@@ -1,4 +1,4 @@
-# SimpMusic Contributor Covenant Code of Conduct
+# Wave Music Contributor Covenant Code of Conduct
 
 ## Our Pledge
 

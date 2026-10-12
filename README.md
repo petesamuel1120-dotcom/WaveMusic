@@ -20,24 +20,23 @@ A modern music app focused on discovery, a personal library, synchronized lyrics
 
 ## About
 
-Wave Music is a music and podcast app designed to make listening feel personal. Browse and discover music, keep your library organized, follow lyrics, explore podcasts, and tune the interface to your taste.
+Wave Music is a music and podcast app designed to make listening feel personal. Browse and discover music, keep your library organized, follow lyrics, tune in to your favorite podcasts, and tweak the interface to your taste.
 
-The project is built with Kotlin and Compose Multiplatform, with a focus on a polished dark interface, expressive color, and optional liquid-glass styling.
+The project is built with Kotlin and Compose Multiplatform.
 
 ## Features
 
-- **Music discovery** — explore music and browse artists.
-- **Personal library** — access favorites, playlists, listening history, and saved content in one place.
-- **Now playing and queue** — control playback and manage what plays next.
-- **Synchronized lyrics** — follow lyrics while listening.
-- **AI lyrics translation** — configure an AI provider and translation language.
-- **Podcasts** — discover shows and browse show details and episodes.
-- **Music videos** — explore music-video content.
-- **Landscape player** — a dedicated landscape listening experience.
-- **Interface customization** — adjust the look and feel, colors, and available visual effects, including liquid glass.
-- **Personalization settings** — shape the app around your preferences.
+- **Personal library**: Keep your favorites, playlists, listening history, and saved content organized.
+- **Now playing and queue**: Control playback and manage what plays next.
+- **Synchronized lyrics**: Follow along with lyrics while listening.
+- **AI lyrics translation**: Translate lyrics using a configured AI provider and your preferred language.
+- **Podcasts**: Discover shows, view show details, and browse episodes.
+- **Music videos**: Explore music-video content.
+- **Landscape player**: A dedicated player layout for landscape listening.
+- **Interface customization**: Adjust colors, appearance, and visual effects, including liquid glass.
+- **Personalization settings**: Customize the app to suit your preferences.
 
-> Feature availability may depend on the current build and the services or API providers used by the app.
+*Some features may vary between builds or depend on external services and API providers.*
 
 ## Screenshots
 
@@ -54,31 +53,48 @@ The project is built with Kotlin and Compose Multiplatform, with a focus on a po
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/07-podcast-discovery.png" alt="Podcast discovery" width="240" />
+  <img src="docs/screenshots/10-personalize.png" alt="Wave Music interface customization" width="240" />
   <img src="docs/screenshots/08-podcast-show.png" alt="Podcast show details" width="240" />
   <img src="docs/screenshots/11-music-videos.png" alt="Music videos" width="240" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/10-personalize.png" alt="Wave Music interface customization" width="240" />
+
   <img src="docs/screenshots/12-landscape-mode.png" alt="Wave Music landscape player" width="420" />
 </p>
 
-## Technology
+## Legal Disclaimer & Terms of Use
 
-- Kotlin
-- Compose Multiplatform
-- Gradle
+### 1. 100% Free, Open-Source & Strictly Non-Commercial
+Wave Music is a free and open-source project developed for educational purposes, personal use, and experimentation. We do not sell the application or monetize it in any way. Wave Music contains no advertisements, premium features, subscriptions, or hidden fees.
+
+### 2. Support Content Creators
+We respect the hard work of artists, musicians, and content creators. We encourage users to support their favorite artists through legitimate channels, including subscribing to YouTube Premium where available. Supporting official platforms helps sustain the creators and services that make music accessible.
+
+Wave Music is an independent project built for music lovers, developers, and enthusiasts. It is not intended to undermine creators' rights or deprive them of legitimate revenue.
+
+### 3. No Hosting of Copyrighted Material
+Wave Music does not host, upload, or distribute copyrighted audio, video, or other media on its own servers. Content accessed through the application is provided by third-party platforms, such as YouTube, and remains subject to the ownership rights, terms, and policies applicable to that content.
+
+Wave Music acts as a client for accessing publicly available content. Its availability does not grant users any additional rights to download, reproduce, or redistribute copyrighted material.
+
+### 4. User Responsibility & Legal Contact
+Wave Music does not host media files on its own servers and therefore cannot directly remove content hosted by third-party platforms. Copyright holders should contact the relevant hosting platform regarding media hosted on its services.
+
+For concerns regarding the Wave Music application or its open-source code, please contact:
+
+Email: petesamuel1120@gmail.com
+
 
 ## Credits and acknowledgments
 
-Open-Source Acknowledgments
-ArchiveTune is made possible by the work of many open-source projects and communities:
+Music Wave is made possible by the work of many open-source projects and communities:
 
-Metrolist by Mostafa Alagamy for the base framework.
-SimpMusic by maxrave-dev for the lyrics API provider.
+SimpMusic by maxrave-dev for the base framework and lyrics API provider.
+
 BetterLyrics for word-by-word lyrics, unison, KuGou, LRCLIB. and artwork provider support.
-Material Color Utilities
+
+Material Color Utilities.
 
 These acknowledgments do not imply affiliation with, endorsement by, or sponsorship from these projects. Their names and original work belong to their respective authors and contributors.
 
