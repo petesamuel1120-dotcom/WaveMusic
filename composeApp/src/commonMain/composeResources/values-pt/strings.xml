@@ -121,12 +121,12 @@
     <string name="about_us">Sobre nós</string>
     <string name="version">Versão</string>
     <string name="github">GitHub</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Compre-me um café</string>
     <string name="developer_blog">Blog do Desenvolvedor</string>
     <string name="developer_blog_tagline">Leia notas de desenvolvimento, tutoriais &amp; nos bastidores</string>
     <string name="blog_promo_title">Algo novo do desenvolvimento</string>
-    <string name="blog_promo_message">Acabei de lançar meu blog pessoal no Pete-Dev. ev — compartilhando a história por trás da Wave Music, mergulhos profundos na música e notas de engenharia. Dê uma lida se você estiver curioso ✨</string>
+    <string name="blog_promo_message">Acabei de lançar meu blog pessoal no petedev. ev — compartilhando a história por trás da Wave Music, mergulhos profundos na música e notas de engenharia. Dê uma lida se você estiver curioso ✨</string>
     <string name="visit_blog">Visite o Blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Título</string>
@@ -281,7 +281,7 @@
     <string name="older_first">Mais Antigas Primeiro</string>
     <string name="newer_first">Mais Recentes Primeiro</string>
     <string name="added_date">Data adicionada</string>
-    <string name="credit_app">A simple music app using YouTube Music for backend \n\nWave Music is an open source project to stream music from YouTube and YouTube Music without ads and tracking. Wave Music provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nWave Music is always free and no ads\n\nBuild with ❤️ from Pete-Dev</string>
+    <string name="credit_app">A simple music app using YouTube Music for backend \n\nWave Music is an open source project to stream music from YouTube and YouTube Music without ads and tracking. Wave Music provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nWave Music is always free and no ads\n\nBuild with ❤️ from petedev</string>
     <string name="issue_tracker">Rastreador de problemas</string>
     <string name="featured_playlists">Listas de reprodução em destaque</string>
     <string name="featured_inArtist">Destacado</string>
@@ -415,8 +415,8 @@
     <string name="other_version">Outra versão</string>
     <string name="later">Depois</string>
     <string name="give_a_star">Dê uma estrela</string>
-    <string name="enjoying_simpmusic">Aproveitando o Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Se gosta de usar o Wave Music, dê-nos uma estrela no GitHub ou deixe-nos uma avaliação</string>
+    <string name="enjoying_wavemusic">Aproveitando o Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Se gosta de usar o Wave Music, dê-nos uma estrela no GitHub ou deixe-nos uma avaliação</string>
     <string name="if_you_love_my_work_consider">"Se aprecia o meu trabalho, considere "</string>
     <string name="buying_me_a_coffee">compre-me um café.</string>
     <string name="fade_audio_effect">Efeito de Áudio em Fade</string>
@@ -540,7 +540,7 @@
     <string name="quit_app">Sair do app</string>
     <string name="local_tracking_title">Histórico de reprodução local</string>
     <string name="local_tracking_description">Registrar seu histórico de reprodução no banco de dados local</string>
-    <string name="simpmusic_charts">Paradas Wave Music</string>
+    <string name="wavemusic_charts">Paradas Wave Music</string>
     <string name="crossfading">Crossfading</string>
     <string name="your_320kbps_url">Sua URL de 320kbps</string>
     <string name="your_320kbps_url_description">Deixe vazio para escolher automaticamente uma URL de trabalho do verificador.</string>

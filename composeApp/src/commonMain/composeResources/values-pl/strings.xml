@@ -121,12 +121,12 @@
     <string name="about_us">O nas</string>
     <string name="version">Wersja</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Kup mi kawę</string>
     <string name="developer_blog">Blog dewelopera</string>
     <string name="developer_blog_tagline">Czytaj notatki deweloperów &amp; poradniki i materiały zza kulis</string>
     <string name="blog_promo_title">Nowości od dewelopera</string>
-    <string name="blog_promo_message">​Właśnie wystartowałem z moim osobistym blogiem pod adresem maxrave.dev – dzielę się tam historią powstania Wave Music, technicznymi analizami ze świata music-tech oraz notatkami inżynieryjnymi. Zajrzyj, jeśli jesteś ciekawy ✨</string>
+    <string name="blog_promo_message">​Właśnie wystartowałem z moim osobistym blogiem pod adresem petedev – dzielę się tam historią powstania Wave Music, technicznymi analizami ze świata music-tech oraz notatkami inżynieryjnymi. Zajrzyj, jeśli jesteś ciekawy ✨</string>
     <string name="visit_blog">Odwiedź blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Tytuł</string>
@@ -280,7 +280,7 @@
     <string name="older_first">Najpierw starsze</string>
     <string name="newer_first">Najpierw nowsze</string>
     <string name="added_date">Dodana data</string>
-    <string name="credit_app">Prosta aplikacja muzyczna wykorzystująca YouTube Music jako backend\n\nWave Music to projekt open source służący do strumieniowego przesyłania muzyki z serwisów YouTube i YouTube Music bez reklam i śledzenia. Wave Music oferuje wiele funkcji:\n\n - Strumieniowe przesyłanie muzyki \n - Zsynchronizowane teksty piosenek\n - Personalizację danych\n - itp. \n\nWave Music jest zawsze bezpłatny i nie zawiera reklam\n\nStworzony z ❤️ przez Pete-Dev</string>
+    <string name="credit_app">Prosta aplikacja muzyczna wykorzystująca YouTube Music jako backend\n\nWave Music to projekt open source służący do strumieniowego przesyłania muzyki z serwisów YouTube i YouTube Music bez reklam i śledzenia. Wave Music oferuje wiele funkcji:\n\n - Strumieniowe przesyłanie muzyki \n - Zsynchronizowane teksty piosenek\n - Personalizację danych\n - itp. \n\nWave Music jest zawsze bezpłatny i nie zawiera reklam\n\nStworzony z ❤️ przez petedev</string>
     <string name="issue_tracker">Lista problemow</string>
     <string name="featured_playlists">Polecane playlisty</string>
     <string name="featured_inArtist">Polecane</string>
@@ -416,8 +416,8 @@
     <string name="other_version">Inne wersje</string>
     <string name="later">Później</string>
     <string name="give_a_star">Daj gwiazdkę</string>
-    <string name="enjoying_simpmusic">Ciesz się Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Jeśli lubisz używać Wave Music, zostaw gwiazdkę na GitHub lub zostaw recenzję na</string>
+    <string name="enjoying_wavemusic">Ciesz się Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Jeśli lubisz używać Wave Music, zostaw gwiazdkę na GitHub lub zostaw recenzję na</string>
     <string name="if_you_love_my_work_consider">"Jeśli kochasz moją pracę, rozważ "</string>
     <string name="buying_me_a_coffee">postawienie mi kawy.</string>
     <string name="fade_audio_effect">Efekt zanikania dźwięku</string>

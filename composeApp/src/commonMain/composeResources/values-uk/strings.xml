@@ -121,12 +121,12 @@
     <string name="about_us">Про нас</string>
     <string name="version">Версія</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Купіть мені каву</string>
     <string name="developer_blog">Блог розробника</string>
     <string name="developer_blog_tagline">Читайте нотатки розробника, навчальні посібники та закулісся</string>
     <string name="blog_promo_title">Щось нове від розробника</string>
-    <string name="blog_promo_message">Я щойно запустив свій особистий блог на maxrave.dev — ділюся історією Wave Music, глибоким зануренням у музичні технології та інженерними нотатками. Почитайте, якщо вам цікаво ✨</string>
+    <string name="blog_promo_message">Я щойно запустив свій особистий блог на petedev — ділюся історією Wave Music, глибоким зануренням у музичні технології та інженерними нотатками. Почитайте, якщо вам цікаво ✨</string>
     <string name="visit_blog">Відвідати блог</string>
     <string name="paypal">PayPal</string>
     <string name="title">Назва</string>
@@ -281,7 +281,7 @@
     <string name="older_first">Спочатку старіші</string>
     <string name="newer_first">Спочатку новіші</string>
     <string name="added_date">Дата додавання</string>
-    <string name="credit_app">Простий музичний застосунок з використанням YouTube Music для бекенду \n\nWave Music - це проєкт з відкритим вихідним кодом для потокової передачі музики з YouTube та YouTube Music без реклами та відстеження. Wave Music надає багато можливостей:\n\n - Потокова музика\n - Синхронізовані тексти\n - Персоналізація даних\n - тощо... \n\nWave Music завжди безкоштовний і без реклами\n\nСтворено з ❤️ від Pete-Dev</string>
+    <string name="credit_app">Простий музичний застосунок з використанням YouTube Music для бекенду \n\nWave Music - це проєкт з відкритим вихідним кодом для потокової передачі музики з YouTube та YouTube Music без реклами та відстеження. Wave Music надає багато можливостей:\n\n - Потокова музика\n - Синхронізовані тексти\n - Персоналізація даних\n - тощо... \n\nWave Music завжди безкоштовний і без реклами\n\nСтворено з ❤️ від petedev</string>
     <string name="issue_tracker">Відстежувач випусків</string>
     <string name="featured_playlists">Рекомендовані плейлисти</string>
     <string name="featured_inArtist">Рекомендовано</string>
@@ -419,8 +419,8 @@
     <string name="other_version">Інші версії</string>
     <string name="later">Пізніше</string>
     <string name="give_a_star">Дати зірку</string>
-    <string name="enjoying_simpmusic">Подобається Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Якщо вам подобається користуватися Wave Music, оцініть Wave Music на GitHub, або залиште свій відгук на</string>
+    <string name="enjoying_wavemusic">Подобається Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Якщо вам подобається користуватися Wave Music, оцініть Wave Music на GitHub, або залиште свій відгук на</string>
     <string name="if_you_love_my_work_consider">"Якщо ви любите мою роботу, подумайте "</string>
     <string name="buying_me_a_coffee">купити мені каву.</string>
     <string name="fade_audio_effect">Ефект затухання звуку</string>
@@ -546,7 +546,7 @@
     <string name="local_tracking_description">Запис історії прослуховування в локальну базу даних</string>
     <string name="blog_notification_title">Сповіщення про публікації в блозі</string>
     <string name="blog_notification_description">Отримуйте сповіщення про публікацію нової публікації в блозі</string>
-    <string name="simpmusic_charts">Чарти Wave Music</string>
+    <string name="wavemusic_charts">Чарти Wave Music</string>
     <string name="crossfading">Кроссфейдинг</string>
     <string name="your_320kbps_url">Ваша URL-адреса 320 Кбіт/с</string>
     <string name="your_320kbps_url_description">Залиште поле порожнім, щоб автоматично вибрати робочу URL-адресу з перевірки часу безперебійної роботи.</string>

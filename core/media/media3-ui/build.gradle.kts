@@ -12,7 +12,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.maxrave.media3.ui"
+    namespace = "com.petedev.wavemusic.media3.ui"
     compileSdk = 37
 
     defaultConfig {

@@ -155,7 +155,7 @@
     <string name="moods_amp_moment"><![CDATA[Moods & Moment]]></string>
     <string name="genre">Genre</string>
     <string name="what_is_best_choice_today">WHAT IS BEST CHOICE TODAY</string>
-    <string name="chart">Chart</string>
+    <string name="chart">Charts</string>
     <string name="global">Global</string>
     <string name="top_tracks">Top tracks</string>
     <string name="top_artists">Top artists</string>
@@ -176,13 +176,13 @@
     <string name="about_us">About us</string>
     <string name="version">Version</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Buy me a coffee</string>
     <string name="developer_blog">Developer Blog</string>
     <string name="developer_blog_tagline">Read dev notes, tutorials &amp; behind-the-scenes</string>
-    <string name="blog_promo_title">Something new from the dev</string>
-    <string name="blog_promo_message">I just launched my personal blog at maxrave.dev — sharing the story behind Wave Music, music-tech deep dives, and engineering notes. Give it a read if you're curious ✨</string>
-    <string name="visit_blog">Visit blog</string>
+    <string name="blog_promo_title">Explore Wave Music</string>
+    <string name="blog_promo_message">Follow the project and see what’s new in Wave Music.</string>
+    <string name="visit_blog">Visit project</string>
     <string name="paypal">PayPal</string>
     <string name="title">Title</string>
     <string name="custom_order">Custom order</string>
@@ -362,9 +362,9 @@
     <string name="older_first">Older First</string>
     <string name="newer_first">Newer First</string>
     <string name="added_date">Added date</string>
-    <string name="credit_app">A simple music app using YouTube Music for backend \n\nWave Music is an open source project to stream music from YouTube and YouTube Music without ads and tracking. Wave Music provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nWave Music is always free and no ads\n\nBuild with ❤️ from Pete-Dev</string>
+    <string name="credit_app">A simple music app using YouTube Music for backend \n\nWave Music is an open source project to stream music from YouTube and YouTube Music without ads and tracking. Wave Music provides many features:\n\n - Streaming music \n - Synced lyrics\n - Personalize data\n - etc… \n\nWave Music is always free and no ads\n\nBuild with ❤️ from petedev</string>
     <string name="issue_tracker">Issue Tracker</string>
-    <string name="copyright" translatable="false">©2023-%1$s Pete-Dev</string>
+    <string name="copyright" translatable="false">©2023-%1$s petedev</string>
     <string name="featured_playlists">Featured Playlists</string>
     <string name="podcasts">Podcasts</string>
     <string name="featured_inArtist">Featured on</string>
@@ -512,6 +512,7 @@
     <string name="lyrics_offset_seconds_value">%1$s s</string>
     <string name="lyrics_offset_default">Default</string>
     <string name="lyrics_offset_using_global">Using the global offset</string>
+    <string name="lyrics_offset_direction_hint">Positive values show lyrics later; negative values show them earlier</string>
     <string name="lyrics_offset_song_scope">Offset for this song only</string>
     <string name="lyrics_offset_global_scope">Applies to songs without their own offset.</string>
     <string name="lyrics_offset_step_hint">Adjust in 0.5-second steps. Positive values show lyrics later; negative values show them earlier.</string>
@@ -614,10 +615,10 @@
     <string name="other_version">Other version</string>
     <string name="later">Later</string>
     <string name="give_a_star">Give a star</string>
-    <string name="enjoying_simpmusic">Enjoying Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">If you enjoy using Wave Music, star Wave Music on GitHub or leave a review on</string>
-    <string name="if_you_love_my_work_consider">"If you love my work, consider "</string>
-    <string name="buying_me_a_coffee">buying me a coffee.</string>
+    <string name="enjoying_wavemusic">Enjoying Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">If you enjoy using Wave Music, star it on GitHub or share feedback on</string>
+    <string name="if_you_love_my_work_consider">"Explore the source and follow Wave Music on "</string>
+    <string name="buying_me_a_coffee">GitHub.</string>
     <string name="footguns_promo_title">Every trap I fell into</string>
     <string name="footguns_promo_message">Wave Music cost me a lot of nights on Kotlin and Compose traps that no doc ever warned me about. I wrote every one of them down in kotlin-footguns, so you don't lose the same nights. If it saves even one of yours, a star would mean a lot to me.</string>
     <string name="fade_audio_effect">Fade audio effect</string>
@@ -703,7 +704,13 @@
     <string name="slim_navigation_bar">Slim navigation bar</string>
     <string name="slim_navigation_bar_description">In portrait, show Home on the left and Search on the right, with a compact player between them. Hides the Library tab.</string>
     <string name="persistent_header_buttons">Fixed header</string>
-    <string name="persistent_header_buttons_description">keeps the header fixed to your screen</string>
+    <string name="persistent_header_buttons_description">Keeps header buttons fixed to your screen</string>
+    <string name="frosted_glass_header">Frosted glass header</string>
+    <string name="frosted_glass_horizon">Frosted glass horizon</string>
+    <string name="frosted_glass_header_off">Off</string>
+    <string name="frosted_glass_header_moderate">Moderate</string>
+    <string name="frosted_glass_header_balanced">Balanced</string>
+    <string name="frosted_glass_header_fuller">Fuller</string>
     <string name="liquid_glass_intensity">Liquid glass intensity</string>
     <string name="liquid_glass_intensity_description">From soft frosted glass to vivid liquid reflections</string>
     <string name="liquid_glass_frosted">Frosted</string>
@@ -821,7 +828,7 @@
     <string name="local_tracking_description">Log your listening history to local database</string>
     <string name="blog_notification_title">Blog post notifications</string>
     <string name="blog_notification_description">Get notified when a new blog post is published</string>
-    <string name="simpmusic_charts">Wave Music Charts</string>
+    <string name="wavemusic_charts">Wave Music Charts</string>
     <string name="crossfading">Crossfading</string>
     <string name="your_320kbps_url">Your 320kbps URL</string>
     <string name="your_320kbps_url_description">Leave empty to auto-choose a working URL from the uptime checker.</string>
@@ -1030,6 +1037,8 @@
     <string name="settings_data_app">Data &amp; app</string>
     <string name="settings_appearance">Look &amp; feel</string>
     <string name="reduce_visual_effects">Reduce visual effects</string>
+    <string name="hide_status_bar">Hide status bar</string>
+    <string name="hide_status_bar_description">Hide the phone’s clock, notification, and battery icons while using the app.</string>
     <string name="reduce_visual_effects_description">recommended for lower-end devices.</string>
     <string name="settings_motion">Motion</string>
     <string name="advanced_dialog_animations">Advanced dialog animations</string>
@@ -1096,6 +1105,7 @@
     <string name="not_set">Not set</string>
     <string name="increase_speed">Increase speed</string>
     <string name="continue_listening_description">Resume unfinished podcast episodes</string>
+    <string name="dismiss_continue_listening_episode_named">Dismiss %1$s from Continue Listening</string>
     <string name="invalid_url_format">Invalid URL format</string>
     <string name="github_releases">GitHub Releases</string>
     <string name="required_field">Required</string>
@@ -1155,4 +1165,5 @@
     <string name="play_action">Play</string>
     <string name="already_in_playlist">Already in this playlist</string>
     <string name="added_to_named_playlist">Added to %1$s</string>
+    <string name="episodes">Episodes</string>
 </resources>

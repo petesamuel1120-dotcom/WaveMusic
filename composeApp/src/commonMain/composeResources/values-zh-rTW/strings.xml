@@ -121,12 +121,12 @@
     <string name="about_us">關於我們</string>
     <string name="version">版本</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">求贊助QAQ</string>
     <string name="developer_blog">部落格</string>
     <string name="developer_blog_tagline">閱讀開發日誌、教學及幕後花絮</string>
     <string name="blog_promo_title">來自開發者的最新動態</string>
-    <string name="blog_promo_message">我剛剛上線了個人部落格 maxrave.dev，內容涵蓋 Wave Music 背後的故事、音樂科技深度解析以及工程技術筆記。如果你有興趣，歡迎去看看 ✨</string>
+    <string name="blog_promo_message">我剛剛上線了個人部落格 petedev，內容涵蓋 Wave Music 背後的故事、音樂科技深度解析以及工程技術筆記。如果你有興趣，歡迎去看看 ✨</string>
     <string name="visit_blog">訪問紀錄</string>
     <string name="paypal">Paypal</string>
     <string name="title">標題</string>
@@ -281,7 +281,7 @@
     <string name="older_first">由舊至新</string>
     <string name="newer_first">最新作品</string>
     <string name="added_date">已添加日期</string>
-    <string name="credit_app">Wave Music是一個開放原始碼、零廣告、使用YouTube Music作為後端的簡單音樂應用程式 \n\n用於從YouTube和YouTube Music串流音樂。Wave Music提供許多功能：\n\n - 串流音樂\n - 同步歌詞\n - 個人化資料\n - 等等... \n\nWave Music總是免費，無廣告\n\n由Pete-Dev 開發 ❤️</string>
+    <string name="credit_app">Wave Music是一個開放原始碼、零廣告、使用YouTube Music作為後端的簡單音樂應用程式 \n\n用於從YouTube和YouTube Music串流音樂。Wave Music提供許多功能：\n\n - 串流音樂\n - 同步歌詞\n - 個人化資料\n - 等等... \n\nWave Music總是免費，無廣告\n\n由petedev 開發 ❤️</string>
     <string name="issue_tracker">回報問題</string>
     <string name="featured_playlists">精選播放清單</string>
     <string name="featured_inArtist">已發布</string>
@@ -417,8 +417,8 @@
     <string name="other_version">其他版本</string>
     <string name="later">以後再說</string>
     <string name="give_a_star">給個星吧</string>
-    <string name="enjoying_simpmusic">享受Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">如果你享受使用Wave Music，就在GitHub給個星或者評論吧</string>
+    <string name="enjoying_wavemusic">享受Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">如果你享受使用Wave Music，就在GitHub給個星或者評論吧</string>
     <string name="if_you_love_my_work_consider">"若你認可我的工作，考慮 "</string>
     <string name="buying_me_a_coffee">請我喝杯咖啡。</string>
     <string name="fade_audio_effect">淡入/淡出音頻效果</string>
@@ -560,7 +560,7 @@
     <string name="local_tracking_description">將您的收聽歷史記錄到本機資料庫</string>
     <string name="blog_notification_title">部落格文章通知</string>
     <string name="blog_notification_description">在新文章發佈時接收通知</string>
-    <string name="simpmusic_charts">Wave Music排行榜</string>
+    <string name="wavemusic_charts">Wave Music排行榜</string>
     <string name="crossfading">交叉淡入淡出</string>
     <string name="your_320kbps_url">您的 320kbps URL</string>
     <string name="your_320kbps_url_description">保持空白以自動選擇上一次工作中的URL。</string>

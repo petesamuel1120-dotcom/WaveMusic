@@ -9,7 +9,7 @@ plugins {
 
 kotlin {
     android {
-        namespace = "org.simpmusic.listentogether"
+        namespace = "com.petedev.wavemusic.listentogether"
         compileSdk = 37
         minSdk = 26
     }

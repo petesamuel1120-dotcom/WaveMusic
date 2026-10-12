@@ -121,12 +121,12 @@
     <string name="about_us">Sobre nosotros</string>
     <string name="version">Versión</string>
     <string name="github">GitHub</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Cómprame un café</string>
     <string name="developer_blog"></string>
     <string name="developer_blog_tagline">Leer notas de desarrollo, tutoriales &amp; detrás de la escena</string>
     <string name="blog_promo_title">Algo nuevo del desarrollador</string>
-    <string name="blog_promo_message">Acabo de lanzar mi blog personal en maxrave.dev — compartiendo la historia detrás de Wave Music, inmersiones profundas de tecnología musical y notas de ingeniería. Dale un vistazo si eres curioso ✨</string>
+    <string name="blog_promo_message">Acabo de lanzar mi blog personal en petedev — compartiendo la historia detrás de Wave Music, inmersiones profundas de tecnología musical y notas de ingeniería. Dale un vistazo si eres curioso ✨</string>
     <string name="visit_blog">Visita el blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Título</string>
@@ -281,7 +281,7 @@
     <string name="older_first">Primero antiguo</string>
     <string name="newer_first">Primero nuevo</string>
     <string name="added_date">Fecha añadida</string>
-    <string name="credit_app">Una aplicación de música sencilla que utiliza YouTube Music como backend \n\nWave Music es un proyecto de código abierto para transmitir música desde YouTube y YouTube Music sin anuncios ni seguimiento. Wave Music ofrece muchas funciones:\n\n - Transmisión de música \n - Letras sincronizadas\n - Personalizar datos\n - etc... \n\nWave Music es siempre gratuito y sin anuncios\n\nCompilado con ❤️ de Pete-Dev</string>
+    <string name="credit_app">Una aplicación de música sencilla que utiliza YouTube Music como backend \n\nWave Music es un proyecto de código abierto para transmitir música desde YouTube y YouTube Music sin anuncios ni seguimiento. Wave Music ofrece muchas funciones:\n\n - Transmisión de música \n - Letras sincronizadas\n - Personalizar datos\n - etc... \n\nWave Music es siempre gratuito y sin anuncios\n\nCompilado con ❤️ de petedev</string>
     <string name="issue_tracker">Rastreador de errores</string>
     <string name="featured_playlists">Listas de reproducción destacadas</string>
     <string name="featured_inArtist">Destacado en</string>
@@ -449,8 +449,8 @@
     <string name="other_version">Otras versiones</string>
     <string name="later">Más tarde</string>
     <string name="give_a_star">Dar una estrella</string>
-    <string name="enjoying_simpmusic">Disfrutando Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Si te gusta usar Wave Music, da una estrella a Wave Music en gituhb o deja una reseña</string>
+    <string name="enjoying_wavemusic">Disfrutando Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Si te gusta usar Wave Music, da una estrella a Wave Music en gituhb o deja una reseña</string>
     <string name="if_you_love_my_work_consider">"Si amas mi trabajo, considera "</string>
     <string name="buying_me_a_coffee">comprame un café.</string>
     <string name="fade_audio_effect">Efecto de desvanecimiento de audio</string>
@@ -619,7 +619,7 @@
     <string name="local_tracking_description">Registra tu historial de escucha en la base de datos local</string>
     <string name="blog_notification_title">Notificaciones de publicaciones del blog</string>
     <string name="blog_notification_description">Recibe una notificación cuando se publique una nueva entrada del blog</string>
-    <string name="simpmusic_charts">Gráficos Wave Music</string>
+    <string name="wavemusic_charts">Gráficos Wave Music</string>
     <string name="crossfading">Crossfade</string>
     <string name="your_320kbps_url">Su URL de 320kbps</string>
     <string name="your_320kbps_url_description">Dejar en blanco para elegir automáticamente una URL funcional desde la comprobación de tiempo de activación.</string>

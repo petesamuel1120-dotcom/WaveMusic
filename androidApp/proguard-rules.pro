@@ -58,10 +58,10 @@
 
 -dontwarn org.slf4j.impl.StaticLoggerBinder
 -dontwarn kotlinx.serialization.internal.ClassValueReferences
--keep class com.maxrave.simpmusic.data.model.** { *; }
--keep class com.maxrave.simpmusic.extension.AllExtKt { *; }
--keep class com.maxrave.simpmusic.extension.AllExtKt$* { *; }
--keep class com.maxrave.kotlinytmusicscraper.extension.MapExtKt$* { *; }
+-keep class com.petedev.wavemusic.data.model.** { *; }
+-keep class com.petedev.wavemusic.extension.AllExtKt { *; }
+-keep class com.petedev.wavemusic.extension.AllExtKt$* { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.extension.MapExtKt$* { *; }
 
 ## Removes all Logs as they cause perfomance issues in prod
 #-assumenosideeffects class android.util.Log {
@@ -148,7 +148,7 @@
 -keep class com.liskovsoft.** { *; }
 -keep interface com.liskovsoft.** { *; }
 -keep class com.eclipsesource.v8.** { *; }
--keep class com.maxrave.kotlinytmusicscraper.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.** { *; }
 
 -dontwarn javax.script.AbstractScriptEngine
 -dontwarn javax.script.Bindings
@@ -200,15 +200,15 @@
 -dontwarn java.beans.Introspector
 -dontwarn java.beans.PropertyDescriptor
 
--dontwarn com.maxrave.data.di.loader.LoaderKt
--dontwarn com.maxrave.media3.ui.MediaPlayerViewKt
+-dontwarn com.petedev.wavemusic.data.di.loader.LoaderKt
+-dontwarn com.petedev.wavemusic.media3.ui.MediaPlayerViewKt
 
--keep class com.maxrave.data.di.loader.LoaderKt { *; }
--keep class com.maxrave.data.mapping.MappingKt { *; }
--keep class com.maxrave.data.extension.** { *; }
--keep class com.maxrave.data.di.** { *; }
+-keep class com.petedev.wavemusic.data.di.loader.LoaderKt { *; }
+-keep class com.petedev.wavemusic.data.mapping.MappingKt { *; }
+-keep class com.petedev.wavemusic.data.extension.** { *; }
+-keep class com.petedev.wavemusic.data.di.** { *; }
 
--keep class com.maxrave.kotlinytmusicscraper.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.** { *; }
 
 -keep class org.simpmusic.lyrics.parser.** { *; }
 -keep class org.simpmusic.lyrics.models.** { *; }

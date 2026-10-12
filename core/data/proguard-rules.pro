@@ -114,7 +114,7 @@
 -keep interface com.liskovsoft.** { *; }
 -keep class com.eclipsesource.v8.** { *; }
 -keep class com.liskovsoft.**
--keep class com.maxrave.kotlinytmusicscraper.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.** { *; }
 
 
 ## Rules for NewPipeExtractor
@@ -122,45 +122,45 @@
 -keep class org.mozilla.classfile.ClassFileWriter
 -dontwarn org.mozilla.javascript.tools.**
 
--keep class com.maxrave.data.di.loader.LoaderKt { *; }
--keep class com.maxrave.data.mapping.MappingKt { *; }
--keep class com.maxrave.data.extension.** { *; }
+-keep class com.petedev.wavemusic.data.di.loader.LoaderKt { *; }
+-keep class com.petedev.wavemusic.data.mapping.MappingKt { *; }
+-keep class com.petedev.wavemusic.data.extension.** { *; }
 
--keep class com.maxrave.kotlinytmusicscraper.extension.** { *; }
--keep class com.maxrave.kotlinytmusicscraper.models.** { *; }
--keep class com.maxrave.kotlinytmusicscraper.parser.** { *; }
--keep class com.maxrave.kotlinytmusicscraper.pages.** { *; }
--keep class com.maxrave.kotlinytmusicscraper.utils.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.extension.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.models.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.parser.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.pages.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.utils.** { *; }
 
 -keep class org.simpmusic.lyrics.parser.** { *; }
 -keep class org.simpmusic.lyrics.models.** { *; }
 -keep class com.simpmusic.lyrics.parser.** { *; }
 
--dontwarn com.maxrave.kotlinytmusicscraper.YouTube$SearchFilter$Companion
--dontwarn com.maxrave.kotlinytmusicscraper.YouTube$SearchFilter
--dontwarn com.maxrave.kotlinytmusicscraper.YouTube
--dontwarn com.maxrave.media3.di.Media3ServiceModuleKt
--dontwarn com.maxrave.media3.exoplayer.ExoPlayerAdapter
--dontwarn com.maxrave.spotify.Spotify
--dontwarn com.maxrave.spotify.model.response.spotify.CanvasResponse$Canvas$ThumbOfCanva
--dontwarn com.maxrave.spotify.model.response.spotify.CanvasResponse$Canvas
--dontwarn com.maxrave.spotify.model.response.spotify.CanvasResponse
--dontwarn com.maxrave.spotify.model.response.spotify.ClientTokenResponse$GrantedToken
--dontwarn com.maxrave.spotify.model.response.spotify.ClientTokenResponse
--dontwarn com.maxrave.spotify.model.response.spotify.PersonalTokenResponse
--dontwarn com.maxrave.spotify.model.response.spotify.SpotifyLyricsResponse$Lyrics$Line
--dontwarn com.maxrave.spotify.model.response.spotify.SpotifyLyricsResponse$Lyrics
--dontwarn com.maxrave.spotify.model.response.spotify.SpotifyLyricsResponse
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items$Item$DataX$Duration
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items$Item$DataX
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items$Item
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse$Data
--dontwarn com.maxrave.spotify.model.response.spotify.search.SpotifySearchResponse
--dontwarn org.simpmusic.aiservice.AIHost
--dontwarn org.simpmusic.aiservice.AiClient
+-dontwarn com.petedev.wavemusic.kotlinytmusicscraper.YouTube$SearchFilter$Companion
+-dontwarn com.petedev.wavemusic.kotlinytmusicscraper.YouTube$SearchFilter
+-dontwarn com.petedev.wavemusic.kotlinytmusicscraper.YouTube
+-dontwarn com.petedev.wavemusic.media3.di.Media3ServiceModuleKt
+-dontwarn com.petedev.wavemusic.media3.exoplayer.ExoPlayerAdapter
+-dontwarn com.petedev.wavemusic.spotify.Spotify
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.CanvasResponse$Canvas$ThumbOfCanva
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.CanvasResponse$Canvas
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.CanvasResponse
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.ClientTokenResponse$GrantedToken
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.ClientTokenResponse
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.PersonalTokenResponse
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.SpotifyLyricsResponse$Lyrics$Line
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.SpotifyLyricsResponse$Lyrics
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.SpotifyLyricsResponse
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items$Item$DataX$Duration
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items$Item$DataX
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items$Item
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2$Items
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search$TracksV2
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse$Data$Search
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse$Data
+-dontwarn com.petedev.wavemusic.spotify.model.response.spotify.search.SpotifySearchResponse
+-dontwarn com.petedev.wavemusic.aiservice.AIHost
+-dontwarn com.petedev.wavemusic.aiservice.AiClient
 -dontwarn org.simpmusic.lyrics.SimpMusicLyricsClient
 -dontwarn org.simpmusic.lyrics.domain.Lyrics$LyricsX$Line
 -dontwarn org.simpmusic.lyrics.domain.Lyrics$LyricsX

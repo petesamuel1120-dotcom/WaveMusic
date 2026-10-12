@@ -121,12 +121,12 @@
     <string name="about_us">정보</string>
     <string name="version">버전</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Buy me a coffee</string>
     <string name="developer_blog">개발자 블로그</string>
     <string name="developer_blog_tagline">개발 노트, 튜토리얼 &amp; 비하인드 스토리를 읽어보세요</string>
     <string name="blog_promo_title">개발자의 새로운 소식</string>
-    <string name="blog_promo_message">Wave Music의 탄생 비화, 음악 기술 심층 분석, 엔지니어링 노트 등을 공유하는 개인 블로그 maxrave.dev를 개설했습니다. 궁금하시면 읽어보세요. ✨️</string>
+    <string name="blog_promo_message">Wave Music의 탄생 비화, 음악 기술 심층 분석, 엔지니어링 노트 등을 공유하는 개인 블로그 petedev를 개설했습니다. 궁금하시면 읽어보세요. ✨️</string>
     <string name="visit_blog">블로그 방문하기</string>
     <string name="paypal">PayPal</string>
     <string name="title">제목</string>
@@ -281,7 +281,7 @@
     <string name="older_first">날짜순</string>
     <string name="newer_first">최신순</string>
     <string name="added_date">추가한 날짜</string>
-    <string name="credit_app">YouTube Music을 백엔드로 사용하는 간단한 음악 앱 \n\nWave Music은 광고나 추적 없이 YouTube나 YouTube Music에서 음악을 스트리밍하는 오픈 소스 프로젝트입니다. Wave Music에서는 다양한 기능들을 이용할 수 있습니다.\n\n - 음악 스트리밍 \n - 가사 싱크\n - 데이터 개인화\n - 기타… \n\nWave Music은 항상 무료이며 광고도 없습니다\n\nPete-Dev가 ❤️을 담아 만듦</string>
+    <string name="credit_app">YouTube Music을 백엔드로 사용하는 간단한 음악 앱 \n\nWave Music은 광고나 추적 없이 YouTube나 YouTube Music에서 음악을 스트리밍하는 오픈 소스 프로젝트입니다. Wave Music에서는 다양한 기능들을 이용할 수 있습니다.\n\n - 음악 스트리밍 \n - 가사 싱크\n - 데이터 개인화\n - 기타… \n\nWave Music은 항상 무료이며 광고도 없습니다\n\npetedev가 ❤️을 담아 만듦</string>
     <string name="issue_tracker">이슈 트래커</string>
     <string name="featured_playlists">추천 재생목록</string>
     <string name="featured_inArtist">추천</string>
@@ -426,8 +426,8 @@
     <string name="other_version">다른 버전</string>
     <string name="later">나중에</string>
     <string name="give_a_star">별 주기</string>
-    <string name="enjoying_simpmusic">Wave Music을 즐기고 계신가요</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Wave Music을 잘 이용하고 계신다면, GitHub에서 Wave Music에 별을 주거나 리뷰를 남겨주세요</string>
+    <string name="enjoying_wavemusic">Wave Music을 즐기고 계신가요</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Wave Music을 잘 이용하고 계신다면, GitHub에서 Wave Music에 별을 주거나 리뷰를 남겨주세요</string>
     <string name="if_you_love_my_work_consider">"앱이 마음에 드시면, "</string>
     <string name="buying_me_a_coffee">커피 한 잔으로 응원해주세요.</string>
     <string name="fade_audio_effect">음향 페이드 효과</string>
@@ -583,7 +583,7 @@
     <string name="local_tracking_description">로컬 데이터베이스에 나의 재생 기록 저장</string>
     <string name="blog_notification_title">블로그 포스트 알림</string>
     <string name="blog_notification_description">새로운 블로그가 올라오면 알림 받기</string>
-    <string name="simpmusic_charts">Wave Music 차트</string>
+    <string name="wavemusic_charts">Wave Music 차트</string>
     <string name="crossfading">크로스페이드 중</string>
     <string name="your_320kbps_url">320kbps URL</string>
     <string name="your_320kbps_url_description">가동 시간 검사기에서 작동하는 URL을 자동으로 선택하려면 비워 두세요.</string>

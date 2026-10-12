@@ -14,7 +14,7 @@ kotlin {
     // which platforms this KMP module supports.
     // See: https://kotlinlang.org/docs/multiplatform-discover-project.html#targets
     android {
-        namespace = "com.maxrave.ktorext"
+        namespace = "com.petedev.wavemusic.ktorext"
         compileSdk = 37
         minSdk = 26
     }

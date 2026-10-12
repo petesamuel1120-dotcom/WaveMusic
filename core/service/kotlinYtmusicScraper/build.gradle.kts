@@ -18,7 +18,7 @@ kotlin {
     // which platforms this KMP module supports.
     // See: https://kotlinlang.org/docs/multiplatform-discover-project.html#targets
     android {
-        namespace = "com.maxrave.kotlinytmusicscraper"
+        namespace = "com.petedev.wavemusic.kotlinytmusicscraper"
         compileSdk = 37
         minSdk = 26
     }

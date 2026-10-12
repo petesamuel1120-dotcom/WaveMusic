@@ -121,7 +121,7 @@
     <string name="about_us">開発者について</string>
     <string name="version">バージョン</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">コーヒーを奢る</string>
     <string name="developer_blog">開発者ブログ</string>
     <string name="blog_promo_title">開発者からの新着情報</string>
@@ -277,7 +277,7 @@
     <string name="older_first">古い順</string>
     <string name="newer_first">新しい順</string>
     <string name="added_date">追加日</string>
-    <string name="credit_app">バックエンドに YouTube ミュージックを使用するシンプルな音楽アプリ \n\nWave Music は、広告や追跡なしで YouTube や YouTube ミュージックから音楽をストリーミングするオープンソースのプロジェクトです。Wave Music の豊富な機能:\n\n - 音楽のストリーミング \n - 歌詞の同期\n - あなたに最適化されたデータ\n - など... \n\nWave Music は常に無料、そして広告もなしです。\n\nPete-Dev が❤️を込めて開発しました</string>
+    <string name="credit_app">バックエンドに YouTube ミュージックを使用するシンプルな音楽アプリ \n\nWave Music は、広告や追跡なしで YouTube や YouTube ミュージックから音楽をストリーミングするオープンソースのプロジェクトです。Wave Music の豊富な機能:\n\n - 音楽のストリーミング \n - 歌詞の同期\n - あなたに最適化されたデータ\n - など... \n\nWave Music は常に無料、そして広告もなしです。\n\npetedev が❤️を込めて開発しました</string>
     <string name="issue_tracker">既知の問題一覧</string>
     <string name="featured_playlists">注目の再生リスト</string>
     <string name="featured_inArtist">おすすめ</string>
@@ -397,8 +397,8 @@
     <string name="other_version">他のバージョン</string>
     <string name="later">また今度</string>
     <string name="give_a_star">星マークを押す</string>
-    <string name="enjoying_simpmusic">Wave Musicを楽しんでください</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Wave Musicで楽しんでいたら、GitHubで星マークを押すか、ここにレビューを投稿してください:</string>
+    <string name="enjoying_wavemusic">Wave Musicを楽しんでください</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Wave Musicで楽しんでいたら、GitHubで星マークを押すか、ここにレビューを投稿してください:</string>
     <string name="if_you_love_my_work_consider">"私のアプリを気に入ったら、"</string>
     <string name="buying_me_a_coffee">コーヒーを一杯ご馳走してください。</string>
     <string name="fade_audio_effect">フェードの音声エフェクト</string>
@@ -481,7 +481,7 @@
     <string name="combine_local_and_youtube_liked_songs_description">YouTubeの高評価のみを使用する (オフライン時はサポートしていません)</string>
     <string name="local_tracking_title">再生履歴をローカルに保存</string>
     <string name="local_tracking_description">再生履歴をローカルデータベースに記録しま す</string>
-    <string name="simpmusic_charts">Wave Music チャート</string>
+    <string name="wavemusic_charts">Wave Music チャート</string>
     <string name="crossfading">クロスフェード</string>
     <!-- Listen Together -->
 </resources>

@@ -121,7 +121,7 @@
     <string name="about_us">Hakkımızda</string>
     <string name="version">Sürüm</string>
     <string name="github">GitHub</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Bana bir kahve ısmarla</string>
     <string name="paypal">PayPal</string>
     <string name="title">Başlık</string>
@@ -274,7 +274,7 @@
     <string name="older_first">Eskiden Yeniye</string>
     <string name="newer_first">Yeniden Eskiye</string>
     <string name="added_date">Tarih eklendi</string>
-    <string name="credit_app">Arka uç olarak YouTube Music'i kullanan basit bir müzik uygulaması \n\nWave Music, reklamlar ve izleme olmadan YouTube ve YouTube Music'ten müzik akışı sağlayan açık kaynaklı bir projedir. Wave Music birçok özellik sunar:\n\n - Müzik akışı \n - Senkronize şarkı sözleri\n - Verileri kişiselleştirin\n - vb… \n\nWave Music her zaman ücretsizdir ve reklam içermez\n\nPete-Dev'tan ❤️ ile oluşturun</string>
+    <string name="credit_app">Arka uç olarak YouTube Music'i kullanan basit bir müzik uygulaması \n\nWave Music, reklamlar ve izleme olmadan YouTube ve YouTube Music'ten müzik akışı sağlayan açık kaynaklı bir projedir. Wave Music birçok özellik sunar:\n\n - Müzik akışı \n - Senkronize şarkı sözleri\n - Verileri kişiselleştirin\n - vb… \n\nWave Music her zaman ücretsizdir ve reklam içermez\n\npetedev'tan ❤️ ile oluşturun</string>
     <string name="issue_tracker">Sorun Takibi</string>
     <string name="featured_playlists">Öne Çıkan Oynatma Listeleri</string>
     <string name="featured_inArtist">Bulunduğu listeler</string>
@@ -401,8 +401,8 @@
     <string name="other_version">Başka versiyon</string>
     <string name="later">Daha sonra</string>
     <string name="give_a_star">Yıldız bırak</string>
-    <string name="enjoying_simpmusic">Wave Music'in keyfini çıkarın</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Wave Music'i kullanmaktan hoşlanıyorsanız, GitHub'da Wave Music'i yıldızlayın veya</string>
+    <string name="enjoying_wavemusic">Wave Music'in keyfini çıkarın</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Wave Music'i kullanmaktan hoşlanıyorsanız, GitHub'da Wave Music'i yıldızlayın veya</string>
     <string name="if_you_love_my_work_consider">"Eğer çalışmalarımı seviyorsanız"</string>
     <string name="buying_me_a_coffee">bana bir kavhe ısmarla.</string>
     <string name="fade_audio_effect">Ses efektini soldur</string>

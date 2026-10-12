@@ -12,7 +12,7 @@ plugins {
 kotlin {
     jvmToolchain(21)
     android {
-        namespace = "com.maxrave.domain"
+        namespace = "com.petedev.wavemusic.domain"
         compileSdk = 37
         minSdk = 26
     }

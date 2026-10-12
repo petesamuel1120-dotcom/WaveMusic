@@ -121,7 +121,7 @@
     <string name="about_us">درباره ما</string>
     <string name="version">نگارش</string>
     <string name="github">گیت‌هاب</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">برای من یک قهوه بخر</string>
     <string name="developer_blog">وبلاگ توسعه دهنده</string>
     <string name="paypal">پی‌پال</string>
@@ -284,7 +284,7 @@
     <string name="older_first">ابتدا قدیمی تر</string>
     <string name="newer_first">ابتدا جدیدتر</string>
     <string name="added_date">تاریخ افزوده شدن</string>
-    <string name="credit_app">یک برنامه موسیقی ساده که از هسته یوتیوب موزیک بهره میبرد\n\nWave Music یک پروژه متن‌باز برای پخش موسیقی از یوتیوب و یوتیوب موزیک بدون آگهی و ردیابی است. Wave Music ویژگی‌های زیادی ارائه می‌دهد:\n\n - پخش موسیقی \n - متن ترانه همگام‌سازی شده\n - داده‌های شخصی‌سازی شده\n - و غیره… \n\nWave Music همیشه رایگان و بدون آگهی است\n\nساخته شده با ❤️ از Pete-Dev</string>
+    <string name="credit_app">یک برنامه موسیقی ساده که از هسته یوتیوب موزیک بهره میبرد\n\nWave Music یک پروژه متن‌باز برای پخش موسیقی از یوتیوب و یوتیوب موزیک بدون آگهی و ردیابی است. Wave Music ویژگی‌های زیادی ارائه می‌دهد:\n\n - پخش موسیقی \n - متن ترانه همگام‌سازی شده\n - داده‌های شخصی‌سازی شده\n - و غیره… \n\nWave Music همیشه رایگان و بدون آگهی است\n\nساخته شده با ❤️ از petedev</string>
     <string name="issue_tracker">ردیاب مشکلات</string>
     <string name="featured_playlists">فهرست‌های پخش ویژه</string>
     <string name="featured_inArtist">ویژه در</string>
@@ -408,8 +408,8 @@
     <string name="other_version">نسخه دیگر</string>
     <string name="later">بعدا</string>
     <string name="give_a_star">ستاره بدید</string>
-    <string name="enjoying_simpmusic">از Wave Music لذت می‌بری</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">اگر از استفاده از Wave Music لذت می‌برید، به Wave Music در GitHub ستاره دهید یا نظر خود را درباره آن بنویسید</string>
+    <string name="enjoying_wavemusic">از Wave Music لذت می‌بری</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">اگر از استفاده از Wave Music لذت می‌برید، به Wave Music در GitHub ستاره دهید یا نظر خود را درباره آن بنویسید</string>
     <string name="if_you_love_my_work_consider">"اگر از کار من خوشتان می‌آید، لطفاً "</string>
     <string name="buying_me_a_coffee">یک قهوه برایم بخرید.</string>
     <string name="fade_audio_effect">افکت محو صدا</string>

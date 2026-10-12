@@ -120,7 +120,7 @@
     <string name="about_us">من نحن</string>
     <string name="version">الإصدار</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">اشتر لي قهوة</string>
     <string name="paypal">PayPal</string>
     <string name="title">العنوان</string>
@@ -271,7 +271,7 @@
     <string name="older_first">إظهار الأقدم أولاً</string>
     <string name="newer_first">إظهار الأحدث أولاً</string>
     <string name="added_date">تاريخ الإضافة</string>
-    <string name="credit_app">تطبيق موسيقي بسيط يستخدم YouTube Music for backend \n\nWave Music هو مشروع مفتوح المصدر لبث الموسيقى من YouTube و YouTube Music بدون إعلانات وتتبُّع. يوفر Wave Music العديد من الميزات:\n\n - بث الموسيقى \n - مزامنة كلمات الاغاني\n - تخصيص البيانات\n - إلخ… \n\nWave Music مجاني دائمًا وبدون إعلانات\n\nتم تطويره بـ ❤️ بواسطة Pete-Dev</string>
+    <string name="credit_app">تطبيق موسيقي بسيط يستخدم YouTube Music for backend \n\nWave Music هو مشروع مفتوح المصدر لبث الموسيقى من YouTube و YouTube Music بدون إعلانات وتتبُّع. يوفر Wave Music العديد من الميزات:\n\n - بث الموسيقى \n - مزامنة كلمات الاغاني\n - تخصيص البيانات\n - إلخ… \n\nWave Music مجاني دائمًا وبدون إعلانات\n\nتم تطويره بـ ❤️ بواسطة petedev</string>
     <string name="issue_tracker">متعقب المشاكل</string>
     <string name="featured_playlists">قوائم التشغيل المميزة</string>
     <string name="featured_inArtist">مميز في</string>
@@ -448,7 +448,7 @@
     <string name="developer_blog">مدونة المطوّر</string>
     <string name="developer_blog_tagline">ملاحظات التطوير والشروحات وما وراء الكواليس</string>
     <string name="blog_promo_title">جديد من المطوّر</string>
-    <string name="blog_promo_message">أطلقت مدونتي الشخصية على maxrave.dev، حيث أشارك قصة Wave Music وتقنيات الموسيقى وملاحظات التطوير. تفضّل بقراءتها إن كنت مهتمًا ✨</string>
+    <string name="blog_promo_message">أطلقت مدونتي الشخصية على petedev، حيث أشارك قصة Wave Music وتقنيات الموسيقى وملاحظات التطوير. تفضّل بقراءتها إن كنت مهتمًا ✨</string>
     <string name="visit_blog">زيارة المدونة</string>
     <string name="custom_order">ترتيب مخصص</string>
     <string name="version_format">الإصدار %1$s</string>
@@ -480,7 +480,7 @@
     <string name="lyrics_provider_unison">الكلمات من Unison ‏(https://unison.boidu.dev)</string>
     <string name="suggestions">مقترحات</string>
     <string name="refetch_lyrics">إعادة جلب الكلمات</string>
-    <string name="copyright">©2023-%1$s Pete-Dev</string>
+    <string name="copyright">©2023-%1$s petedev</string>
     <string name="podcasts">البودكاست</string>
     <string name="radio_audio_only">تشغيل النسخة الصوتية بدل الفيديو الموسيقي في الراديو</string>
     <string name="radio_audio_only_description">شغّل النسخة الصوتية بدل الفيديو الموسيقي إن توفرت، وتجاوز الريمكسات والمزج المتاحة كفيديو فقط. لا يؤثر هذا على قوائم التشغيل والألبومات.</string>
@@ -646,8 +646,8 @@
     <string name="other_version">نسخة أخرى</string>
     <string name="later">لاحقًا</string>
     <string name="give_a_star">إضافة نجمة</string>
-    <string name="enjoying_simpmusic">هل تستمتع بـ Wave Music؟</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">إذا كنت تستمتع باستخدام Wave Music، أضف له نجمة على GitHub أو اكتب تقييمًا على</string>
+    <string name="enjoying_wavemusic">هل تستمتع بـ Wave Music؟</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">إذا كنت تستمتع باستخدام Wave Music، أضف له نجمة على GitHub أو اكتب تقييمًا على</string>
     <string name="if_you_love_my_work_consider">إذا أعجبك عملي، يمكنك</string>
     <string name="buying_me_a_coffee">دعمي بكوب قهوة.</string>
     <string name="footguns_promo_title">كل المشاكل التي وقعت فيها</string>
@@ -851,7 +851,7 @@
     <string name="local_tracking_description">تسجيل سجل الاستماع في قاعدة بيانات محلية</string>
     <string name="blog_notification_title">إشعارات المدونة</string>
     <string name="blog_notification_description">تلقي إشعار عند نشر تدوينة جديدة</string>
-    <string name="simpmusic_charts">قوائم ترتيب Wave Music</string>
+    <string name="wavemusic_charts">قوائم ترتيب Wave Music</string>
     <string name="crossfading">جارٍ التلاشي المتداخل</string>
     <string name="your_320kbps_url">رابط البث بمعدل 320 كيلوبت/ث</string>
     <string name="your_320kbps_url_description">اتركه فارغًا لاختيار رابط يعمل تلقائيًا من خدمة التحقق من التوفر.</string>

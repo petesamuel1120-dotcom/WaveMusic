@@ -27,14 +27,14 @@ plugins {
 
 // Core modules live in the `core` git submodule INSIDE this repo.
 // We intentionally resolve ONLY the in-repo submodule and no longer probe a
-// sibling `../core` outside SimpMusic: another project (FPT Play `core`) shares
+// sibling `../core` outside Wave Music: another project (FPT Play `core`) shares
 // the same folder name one level up, and the old co-development lookup bound to
 // it by mistake, breaking configuration with ":common ... does not exist".
 val coreDir = File(rootDir, "core")
 val serviceDir = File(rootDir, "core/service")
 val mediaDir = File(rootDir, "core/media")
 
-rootProject.name = "SimpMusic"
+rootProject.name = "WaveMusic"
 include(
     ":androidApp",
     ":composeApp",

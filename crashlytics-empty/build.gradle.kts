@@ -11,7 +11,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.simpmusic.crashlytics"
+    namespace = "com.petedev.wavemusic.crashlytics"
     compileSdk = 37
 
     defaultConfig {

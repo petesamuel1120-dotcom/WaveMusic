@@ -121,12 +121,12 @@
     <string name="about_us">Tentang kami</string>
     <string name="version">Versi</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Belikan Aku secangkir kopi</string>
     <string name="developer_blog">Blog Pengembang</string>
     <string name="developer_blog_tagline">Baca catatan pengembang, tutorial &amp; cerita di balik layar</string>
     <string name="blog_promo_title">Sesuatu yang baru dari pengembang</string>
-    <string name="blog_promo_message">Saya baru saja meluncurkan blog pribadi saya di maxrave.dev — di sana saya membagikan kisah di balik Wave Music, ulasan mendalam seputar teknologi musik, dan catatan teknis. Silakan baca jika Anda penasaran ✨</string>
+    <string name="blog_promo_message">Saya baru saja meluncurkan blog pribadi saya di petedev — di sana saya membagikan kisah di balik Wave Music, ulasan mendalam seputar teknologi musik, dan catatan teknis. Silakan baca jika Anda penasaran ✨</string>
     <string name="visit_blog">Kunjungi blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Judul</string>
@@ -283,7 +283,7 @@
     <string name="older_first">Terlama dulu</string>
     <string name="newer_first">Terbaru dulu</string>
     <string name="added_date">Tanggal ditambahkan</string>
-    <string name="credit_app">Aplikasi musik sederhana yang menggunakan YouTube Music untuk backend \n\nWave Music adalah proyek sumber terbuka untuk streaming musik dari YouTube dan YouTube Music tanpa iklan dan pelacakan. Wave Music menyediakan banyak fitur:\n\n - Streaming musik\n - Lirik yang disinkronkan\n - Personalisasi data\n - dll... \n\nWave Music selalu gratis dan tidak ada iklan\n\nDibangun dengan ❤️ oleh Pete-Dev</string>
+    <string name="credit_app">Aplikasi musik sederhana yang menggunakan YouTube Music untuk backend \n\nWave Music adalah proyek sumber terbuka untuk streaming musik dari YouTube dan YouTube Music tanpa iklan dan pelacakan. Wave Music menyediakan banyak fitur:\n\n - Streaming musik\n - Lirik yang disinkronkan\n - Personalisasi data\n - dll... \n\nWave Music selalu gratis dan tidak ada iklan\n\nDibangun dengan ❤️ oleh petedev</string>
     <string name="issue_tracker">Pelacakan Masalah</string>
     <string name="featured_playlists">Daftar Putar Unggulan</string>
     <string name="featured_inArtist">Termasuk di</string>
@@ -423,8 +423,8 @@
     <string name="other_version">Versi lainnya</string>
     <string name="later">Nanti</string>
     <string name="give_a_star">Berikan bintang</string>
-    <string name="enjoying_simpmusic">Menikmati Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Jika Anda menikmati penggunaan Wave Music, beri bintang pada Wave Music di GitHub atau tinggalkan ulasan di sana</string>
+    <string name="enjoying_wavemusic">Menikmati Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Jika Anda menikmati penggunaan Wave Music, beri bintang pada Wave Music di GitHub atau tinggalkan ulasan di sana</string>
     <string name="if_you_love_my_work_consider">"Jika Anda menyukai karya saya, pertimbangkan "</string>
     <string name="buying_me_a_coffee">membelikanku secangkir kopi.</string>
     <string name="fade_audio_effect">Efek audio memudar</string>
@@ -550,7 +550,7 @@
     <string name="local_tracking_description">Catat riwayat mendengarkan Anda ke basis data lokal</string>
     <string name="blog_notification_title">Pemberitahuan postingan blog</string>
     <string name="blog_notification_description">Dapatkan pemberitahuan saat ada postingan blog baru yang diterbitkan</string>
-    <string name="simpmusic_charts">Tangga lagu Wave Music</string>
+    <string name="wavemusic_charts">Tangga lagu Wave Music</string>
     <string name="crossfading">Memudar</string>
     <string name="your_320kbps_url">URL 320kbps Anda</string>
     <string name="your_320kbps_url_description">Biarkan kosong agar sistem secara otomatis memilih URL yang aktif dari alat pemeriksa status aktif.</string>

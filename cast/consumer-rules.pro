@@ -5,6 +5,6 @@
 # class — or its no-arg constructor — can be renamed/removed by a
 # consuming app's release (R8 optimize+obfuscate) build, crashing Cast
 # initialization at runtime.
--keep class org.simpmusic.cast.CastOptionsProvider {
+-keep class com.petedev.wavemusic.cast.CastOptionsProvider {
     public <init>();
 }

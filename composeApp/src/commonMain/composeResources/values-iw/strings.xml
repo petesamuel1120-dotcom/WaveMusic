@@ -116,7 +116,7 @@
     <string name="about_us">אודותינו</string>
     <string name="version">גרסה</string>
     <string name="github">גיטהאב</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">קנה לי קפה</string>
     <string name="paypal">פיי-פאל</string>
     <string name="title">כותרת</string>
@@ -260,7 +260,7 @@
     <string name="reload">טען מחדש</string>
     <string name="added_date">נוסף תאריך</string>
     <string name="credit_app">אפליקציית מוזיקה פשוטה באמצעות YouTube Music עבור backend \n\nWave Music הוא פרויקט קוד פתוח להזרמת מוזיקה מ-YouTube ו-YouTube Music ללא מודעות ומעקב. Wave Music מספקת תכונות רבות:\n\n - הזרמת מוזיקה \n - מילים מסונכרנות\n - התאמה אישית של נתונים\n - אקו… \n\n
-Wave Music תמיד בחינם וללא פרסומות\n\nבונה מ ❤️מ-Pete-Dev</string>
+Wave Music תמיד בחינם וללא פרסומות\n\nבונה מ ❤️מ-petedev</string>
     <string name="issue_tracker">מעקב סוגיות</string>
     <string name="featured_playlists">רשימות השמעה נבחרות</string>
     <string name="featured_inArtist">מצורף ב</string>

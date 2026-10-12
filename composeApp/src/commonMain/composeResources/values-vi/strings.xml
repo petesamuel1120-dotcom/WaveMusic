@@ -121,12 +121,12 @@
     <string name="about_us">Về tôi</string>
     <string name="version">Phiên bản</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Hỗ trợ tôi</string>
     <string name="developer_blog">Blog của nhà phát triển</string>
     <string name="developer_blog_tagline">Đọc các ghi chép của nhà phát triển, hướng dẫn &amp; đằng sau các tính năng</string>
     <string name="blog_promo_title">Một vài điều mới đến từ nhà phát triển</string>
-    <string name="blog_promo_message">Tôi vừa ra mắt blog cá nhân của mình tại maxrave.dev — nơi chia sẻ câu chuyện đằng sau Wave Music, những phân tích chuyên sâu về công nghệ âm nhạc và những ghi chú kỹ thuật. Hãy ghé thăm nếu bạn tò mò nhé ✨</string>
+    <string name="blog_promo_message">Tôi vừa ra mắt blog cá nhân của mình tại petedev — nơi chia sẻ câu chuyện đằng sau Wave Music, những phân tích chuyên sâu về công nghệ âm nhạc và những ghi chú kỹ thuật. Hãy ghé thăm nếu bạn tò mò nhé ✨</string>
     <string name="visit_blog">Ghé thăm blog</string>
     <string name="paypal">PayPal</string>
     <string name="title">Tiêu đề</string>
@@ -282,7 +282,7 @@
     <string name="older_first">Cũ trước</string>
     <string name="newer_first">Mới trước</string>
     <string name="added_date">Ngày thêm vào</string>
-    <string name="credit_app">Một ứng dụng âm nhạc đơn giản sử dụng dữ liệu từ YouTube Music \n\nWave Music là một dự án nguồn mở để phát nhạc từ YouTube và YouTube Music mà không bị quảng cáo và theo dõi. Wave Music cung cấp nhiều tính năng:\n\n - Phát nhạc \n - Lời bài hát được đồng bộ hóa\n - Cá nhân hóa dữ liệu\n - v.v… \n\nWave Music luôn miễn phí và không có quảng cáo\n\nXây dựng với ❤️ bởi Pete-Dev</string>
+    <string name="credit_app">Một ứng dụng âm nhạc đơn giản sử dụng dữ liệu từ YouTube Music \n\nWave Music là một dự án nguồn mở để phát nhạc từ YouTube và YouTube Music mà không bị quảng cáo và theo dõi. Wave Music cung cấp nhiều tính năng:\n\n - Phát nhạc \n - Lời bài hát được đồng bộ hóa\n - Cá nhân hóa dữ liệu\n - v.v… \n\nWave Music luôn miễn phí và không có quảng cáo\n\nXây dựng với ❤️ bởi petedev</string>
     <string name="issue_tracker">Theo dõi lỗi</string>
     <string name="featured_playlists">Danh sách phát nổi bật</string>
     <string name="featured_inArtist">Nổi bật</string>
@@ -454,8 +454,8 @@
     <string name="other_version">Phiên bản khác</string>
     <string name="later">Để sau</string>
     <string name="give_a_star">Tặng một sao</string>
-    <string name="enjoying_simpmusic">Yêu thích Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Nếu bạn yêu thích Wave Music, sao Wave Music trên GitHub hoặc để lại một đánh giá trên</string>
+    <string name="enjoying_wavemusic">Yêu thích Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Nếu bạn yêu thích Wave Music, sao Wave Music trên GitHub hoặc để lại một đánh giá trên</string>
     <string name="if_you_love_my_work_consider">"Nếu bạn cảm thấy yêu thích những gì tôi làm, có thể "</string>
     <string name="buying_me_a_coffee">mua cho tôi một ly cà phê.</string>
     <string name="fade_audio_effect">Hiệu ứng làm mờ âm thanh</string>
@@ -626,7 +626,7 @@
     <string name="local_tracking_description">Ghi lại lịch sử nghe nhạc vào cơ sở dữ liệu cục bộ</string>
     <string name="blog_notification_title">Thông báo về các bài blog mới</string>
     <string name="blog_notification_description">Nhận thông báo khi có bài blog mới được phát hành</string>
-    <string name="simpmusic_charts">Wave Music Charts</string>
+    <string name="wavemusic_charts">Wave Music Charts</string>
     <string name="crossfading">Đang chuyển bài mượt mà</string>
     <string name="your_320kbps_url">Đường dẫn link 320kbps của bạn</string>
     <string name="your_320kbps_url_description">Để trống để tự động chọn một URL hoạt động từ hệ thống kiểm tra.</string>

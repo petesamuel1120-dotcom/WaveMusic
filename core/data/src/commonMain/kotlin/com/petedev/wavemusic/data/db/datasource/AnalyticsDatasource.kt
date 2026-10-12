@@ -1,0 +1,138 @@
+package com.petedev.wavemusic.data.db.datasource
+
+import DatabaseDao
+import com.petedev.wavemusic.domain.data.entities.analytics.PlaybackEventEntity
+import com.petedev.wavemusic.domain.extension.beforeXDays
+import com.petedev.wavemusic.domain.extension.now
+import com.petedev.wavemusic.domain.data.entities.analytics.query.TopPlayedTracks
+import kotlinx.coroutines.flow.Flow
+import kotlinx.datetime.LocalDateTime
+
+internal class AnalyticsDatasource(
+    private val databaseDao: DatabaseDao,
+) {
+    suspend fun insertPlaybackEvent(
+        videoId: String,
+        channelIds: List<String>,
+        albumBrowseId: String?,
+        durationSecond: Long,
+        listenedSecond: Long,
+    ) = databaseDao.insertPlaybackWithArtists(
+        videoId = videoId,
+        channelIds = channelIds,
+        albumBrowseId = albumBrowseId,
+        durationSecond = durationSecond,
+        listenedSecond = listenedSecond,
+    )
+
+    suspend fun updatePlaybackEventListenedSecond(
+        eventId: Long,
+        listenedSecond: Long,
+    ) = databaseDao.updatePlaybackEventListenedSecond(eventId, listenedSecond)
+
+    suspend fun getPlaybackEventsByOffset(
+        offset: Int,
+        limit: Int,
+    ): List<PlaybackEventEntity> = databaseDao.getPlaybackEventsByOffset(offset, limit)
+
+    suspend fun getPlaybackEventsByOffsetAndTimestamp(
+        offset: Int,
+        limit: Int,
+        cutoffTimestamp: LocalDateTime,
+    ): List<PlaybackEventEntity> = databaseDao.getPlaybackEventsByOffsetAndTimestamp(offset, limit, cutoffTimestamp)
+
+    suspend fun deleteOldPlaybackEvents(cutoffTimestamp: LocalDateTime) = databaseDao.deleteOldPlaybackEvents(cutoffTimestamp)
+
+    // Query methods for analytics reports
+    suspend fun queryTopPlayedSongsLastXDays(x: Int) =
+        databaseDao.queryTopPlayedSongsInRange(
+            startTimestamp = now().beforeXDays(x),
+            endTimestamp = now(),
+        )
+
+    fun queryTopPlayedSongsInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ): Flow<List<TopPlayedTracks>> = databaseDao.queryTopPlayedSongsInRange(startTimestamp, endTimestamp)
+
+    suspend fun queryTopArtistsLastXDays(x: Int) =
+        databaseDao.queryTopArtistsInRange(
+            startTimestamp = now().beforeXDays(x),
+            endTimestamp = now(),
+        )
+
+    suspend fun queryTopArtistsInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.queryTopArtistsInRange(startTimestamp, endTimestamp)
+
+    suspend fun queryTopArtistsWithTimeInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.queryTopArtistsWithTimeInRange(startTimestamp, endTimestamp)
+
+    suspend fun queryTopAlbumsLastXDays(x: Int) =
+        databaseDao.queryTopAlbumsInRange(
+            startTimestamp = now().beforeXDays(x),
+            endTimestamp = now(),
+        )
+
+    suspend fun queryTopAlbumsInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.queryTopAlbumsInRange(startTimestamp, endTimestamp)
+
+    suspend fun getTotalPlaybackEventCount(): Long = databaseDao.getTotalPlaybackEventCount()
+
+    suspend fun getTotalEventArtistCount(): Long = databaseDao.getTotalEventArtistCount()
+
+    suspend fun getTotalListeningTimeInSeconds(): Long = databaseDao.getTotalListeningTimeInSeconds()
+
+    suspend fun getPlaybackEventCountInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getPlaybackEventCountInRange(
+        startTimestamp,
+        endTimestamp,
+    )
+
+    suspend fun getPlaybackSamplesInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getPlaybackSamplesInRange(startTimestamp, endTimestamp)
+
+    suspend fun getDistinctTrackCountInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getDistinctTrackCountInRange(startTimestamp, endTimestamp)
+
+    suspend fun getDistinctAlbumCountInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getDistinctAlbumCountInRange(startTimestamp, endTimestamp)
+
+    suspend fun getDistinctArtistCountInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getDistinctArtistCountInRange(startTimestamp, endTimestamp)
+
+    suspend fun getNewArtistCountInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getNewArtistCountInRange(startTimestamp, endTimestamp)
+
+    suspend fun getArtistPlayCountsInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getArtistPlayCountsInRange(startTimestamp, endTimestamp)
+
+    suspend fun getDecadeCountsInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getDecadeCountsInRange(startTimestamp, endTimestamp)
+
+    suspend fun getDatedPlayCountInRange(
+        startTimestamp: LocalDateTime,
+        endTimestamp: LocalDateTime,
+    ) = databaseDao.getDatedPlayCountInRange(startTimestamp, endTimestamp)
+}

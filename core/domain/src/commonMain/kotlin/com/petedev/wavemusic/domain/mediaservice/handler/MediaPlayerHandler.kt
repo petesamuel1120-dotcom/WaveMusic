@@ -1,0 +1,394 @@
+package com.petedev.wavemusic.domain.mediaservice.handler
+
+import com.petedev.wavemusic.domain.data.entities.NewFormatEntity
+import com.petedev.wavemusic.domain.data.entities.SongEntity
+import com.petedev.wavemusic.domain.data.model.browse.album.Track
+import com.petedev.wavemusic.domain.data.model.mediaService.SponsorSkipSegments
+import com.petedev.wavemusic.domain.data.player.GenericCastState
+import com.petedev.wavemusic.domain.data.player.GenericCommandButton
+import com.petedev.wavemusic.domain.data.player.GenericMediaItem
+import com.petedev.wavemusic.domain.data.player.PlayerError
+import com.petedev.wavemusic.domain.mediaservice.player.MediaPlayerInterface
+import kotlinx.coroutines.flow.StateFlow
+
+/**
+ * Handler interface for managing media playback service operations
+ */
+interface MediaPlayerHandler {
+    // Core player interface
+    val player: MediaPlayerInterface
+
+    // State flows
+    val simpleMediaState: StateFlow<SimpleMediaState>
+    val nowPlaying: StateFlow<GenericMediaItem?>
+    val queueData: StateFlow<QueueData?>
+    val controlState: StateFlow<ControlState>
+    val nowPlayingState: StateFlow<NowPlayingTrackState>
+    val sleepTimerState: StateFlow<SleepTimerState>
+    val skipSegments: StateFlow<List<SponsorSkipSegments>?>
+    val format: StateFlow<NewFormatEntity?>
+    val currentSongIndex: StateFlow<Int>
+    val castState: StateFlow<GenericCastState>
+
+    // Listeners
+    var onUpdateNotification: (List<GenericCommandButton>) -> Unit
+    var pushPlayerError: (PlayerError) -> Unit
+    var showToast: (ToastType) -> Unit
+
+    // Playback control
+    suspend fun onPlayerEvent(playerEvent: PlayerEvent)
+
+    fun toggleRadio()
+
+    fun toggleLike()
+
+    fun like(liked: Boolean)
+
+    fun resetSongAndQueue()
+
+    // Sleep timer
+    fun sleepStart(minutes: Int)
+
+    fun sleepStop()
+
+    // Media management
+    fun removeMediaItem(position: Int)
+
+    fun addMediaItem(
+        mediaItem: GenericMediaItem,
+        playWhenReady: Boolean = true,
+    )
+
+    fun clearMediaItems()
+
+    fun addMediaItemList(mediaItemList: List<GenericMediaItem>)
+
+    fun playMediaItemInMediaSource(index: Int)
+
+    fun currentSongIndex(): Int
+
+    // Index of the currently playing item in the current queue data (shuffled or not)
+    fun currentOrderIndex(): Int
+
+    suspend fun swap(
+        from: Int,
+        to: Int,
+    )
+
+    fun resetCrossfade()
+
+    // Queue management
+    fun shufflePlaylist(randomTrackIndex: Int = 0)
+
+    fun loadMore()
+
+    fun getRelated(videoId: String)
+
+    fun setQueueData(queueData: QueueData.Data)
+
+    fun getCurrentMediaItem(): GenericMediaItem?
+
+    // Track operations
+    suspend fun moveItemUp(position: Int)
+
+    suspend fun moveItemDown(position: Int)
+
+    fun addFirstMediaItemToIndex(
+        mediaItem: GenericMediaItem?,
+        index: Int,
+    )
+
+    fun reset()
+
+    suspend fun load(
+        downloaded: Int = 0,
+        index: Int? = null,
+    )
+
+    suspend fun loadMoreCatalog(
+        listTrack: ArrayList<Track>,
+        isAddToQueue: Boolean = false,
+    )
+
+    suspend fun updateCatalog(
+        downloaded: Int = 0,
+        index: Int? = null,
+    ): Boolean
+
+    fun addQueueToPlayer()
+
+    fun loadPlaylistOrAlbum(index: Int? = null)
+
+    fun setCurrentSongIndex(index: Int)
+
+    suspend fun playNext(track: Track)
+
+    suspend fun <T> loadMediaItem(
+        anyTrack: T,
+        type: String,
+        index: Int? = null,
+    )
+
+    // Playback information
+    fun getPlayerDuration(): Long
+
+    fun getProgress(): Long
+
+    fun startProgressUpdate()
+
+    fun stopProgressUpdate()
+
+    fun startBufferedUpdate()
+
+    fun stopBufferedUpdate()
+
+    // Settings
+    fun mayBeNormalizeVolume()
+
+    fun mayBeSaveRecentSong(runBlocking: Boolean = false)
+
+    fun mayBeSavePlaybackState()
+
+    fun mayBeRestoreQueue()
+
+    /**
+     * Restores the persisted queue and starts playing it.
+     *
+     * This is the background playback resumption path: a `play` command that arrives with an
+     * empty player and no UI attached (a Bluetooth or headset button, a Samsung Routine, the
+     * system resumption chip). Unlike [mayBeRestoreQueue] it must end with the player actually
+     * playing, and it must get there quickly - see the implementation for why.
+     *
+     * Returns false when there is nothing to resume.
+     */
+    suspend fun restoreQueueAndPlay(): Boolean
+
+    // Lifecycle
+    fun shouldReleaseOnTaskRemoved(): Boolean
+
+    fun release()
+}
+
+// State classes and enums - these would need to be defined in domain layer
+sealed class RepeatState {
+    data object None : RepeatState()
+
+    data object All : RepeatState()
+
+    data object One : RepeatState()
+}
+
+sealed class PlayerEvent {
+    data object PlayPause : PlayerEvent()
+
+    data object Backward : PlayerEvent()
+
+    data object Forward : PlayerEvent()
+
+    data object Stop : PlayerEvent()
+
+    data object Next : PlayerEvent()
+
+    data object Previous : PlayerEvent()
+
+    /**
+     * Always advances to the previous media item, bypassing the 3-second
+     * "seek to start of current track" behaviour of [Previous]. Used by UI
+     * affordances like the artwork pager swipe.
+     */
+    data object SkipToPrevious : PlayerEvent()
+
+    data object Shuffle : PlayerEvent()
+
+    data object Repeat : PlayerEvent()
+
+    data class UpdateProgress(
+        val newProgress: Float,
+        /** Metadata duration fallback while the player is still resolving the stream. */
+        val fallbackDurationMs: Long? = null,
+    ) : PlayerEvent()
+
+    data object ToggleLike : PlayerEvent()
+
+    data class UpdateVolume(
+        val newVolume: Float,
+    ) : PlayerEvent()
+}
+
+sealed class SimpleMediaState {
+    data object Initial : SimpleMediaState()
+
+    data object Ended : SimpleMediaState()
+
+    data class Ready(
+        val duration: Long,
+    ) : SimpleMediaState()
+
+    data class Loading(
+        val bufferedPercentage: Int,
+        val duration: Long,
+    ) : SimpleMediaState()
+
+    data class Progress(
+        val progress: Long,
+    ) : SimpleMediaState()
+
+    data class Buffering(
+        val position: Long,
+    ) : SimpleMediaState()
+}
+
+data class ControlState(
+    val isPlaying: Boolean,
+    val isShuffle: Boolean,
+    val repeatState: RepeatState,
+    val isLiked: Boolean,
+    val isNextAvailable: Boolean,
+    val isPreviousAvailable: Boolean,
+    val isCrossfading: Boolean,
+    val volume: Float, // 0f..1f
+)
+
+data class NowPlayingTrackState(
+    val mediaItem: GenericMediaItem,
+    val track: Track?,
+    val songEntity: SongEntity?,
+) {
+    fun isNotEmpty(): Boolean = this != initial()
+
+    companion object {
+        fun initial(): NowPlayingTrackState =
+            NowPlayingTrackState(
+                mediaItem = GenericMediaItem.EMPTY,
+                track = null,
+                songEntity = null,
+            )
+    }
+}
+
+data class SleepTimerState(
+    val isDone: Boolean,
+    val timeRemaining: Int,
+)
+
+data class QueueData(
+    val queueState: StateSource = StateSource.STATE_CREATED,
+    val data: Data = Data(),
+) {
+    data class Data(
+        val listTracks: List<Track> = arrayListOf(),
+        val firstPlayedTrack: Track? = null,
+        val playlistId: String? = null,
+        val playlistName: String? = null,
+        val playlistType: PlaylistType? = null,
+        val continuation: String? = null,
+        // Automatic recommendations follow the seed; explicit playlists keep every item.
+        val mediaType: QueueMediaType? = if (RadioQueueTrim.appliesTo(playlistType, playlistId)) {
+            (firstPlayedTrack ?: listTracks.firstOrNull())?.let(QueueMediaType::fromTrack)
+        } else null,
+    ) {
+        fun matchingTracks(tracks: Collection<Track>): List<Track> =
+            mediaType?.let { kind -> tracks.filter(kind::accepts) } ?: tracks.toList()
+
+        fun homogeneous(): Data = copy(listTracks = matchingTracks(listTracks))
+    }
+
+    enum class StateSource {
+        STATE_CREATED,
+        STATE_INITIALIZING,
+        STATE_INITIALIZED,
+        STATE_ERROR,
+    }
+
+    fun addTrackList(tracks: Collection<Track>, isAddToQueue: Boolean = false): QueueData {
+        val temp = this.data.listTracks.toMutableList()
+        temp.addAll(if (isAddToQueue) tracks else data.matchingTracks(tracks))
+        return this.copy(
+            data =
+                this.data.copy(
+                    listTracks = temp,
+                ),
+        )
+    }
+
+    fun addToIndex(
+        track: Track,
+        index: Int,
+    ): QueueData {
+        val temp = this.data.listTracks.toMutableList()
+        temp.add(index, track)
+        return this.copy(
+            data =
+                this.data.copy(
+                    listTracks = temp,
+                ),
+        )
+    }
+
+    fun removeFirstTrackForPlaylistAndAlbum(): QueueData {
+        val temp = this.data.listTracks.toMutableList()
+        temp.removeAt(0)
+        return this.copy(
+            data =
+                this.data.copy(
+                    listTracks = temp,
+                    firstPlayedTrack = null,
+                ),
+        )
+    }
+
+    fun removeTrackWithIndex(index: Int): QueueData {
+        val temp = this.data.listTracks.toMutableList()
+        temp.removeAt(index)
+        return this.copy(
+            data =
+                this.data.copy(
+                    listTracks = temp,
+                ),
+        )
+    }
+
+    fun setContinuation(continuation: String): QueueData =
+        this.copy(
+            data =
+                this.data.copy(
+                    continuation = continuation,
+                ),
+        )
+
+    fun isLocalPlaylist(): Boolean = this.data.playlistType == PlaylistType.LOCAL_PLAYLIST
+
+    fun isRadio(): Boolean = this.data.playlistType == PlaylistType.RADIO
+
+    /** True for both plain playlists and albums — an album queue is a playlist that knows its origin. */
+    fun isPlaylist(): Boolean =
+        this.data.playlistType == PlaylistType.PLAYLIST ||
+            this.data.playlistType == PlaylistType.ALBUM
+}
+
+enum class PlaylistType {
+    PLAYLIST,
+
+    /**
+     * A queue loaded from an album. Behaves exactly like [PLAYLIST] everywhere else — it exists so
+     * playback can tell that the tracks were sequenced together deliberately, which is what lets
+     * crossfade step aside inside an album while still fading into whatever is queued after it.
+     */
+    ALBUM,
+    LOCAL_PLAYLIST,
+    RADIO,
+}
+
+sealed class ToastType(
+    extra: String? = null,
+) {
+    data object ExplicitContent : ToastType()
+
+    data class PlayerError(
+        val error: String,
+    ) : ToastType(error)
+
+    data class SponsorBlockSkip(
+        val category: String,
+    ) : ToastType(category)
+}

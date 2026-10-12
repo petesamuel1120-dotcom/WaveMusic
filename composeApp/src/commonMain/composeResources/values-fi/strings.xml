@@ -116,7 +116,7 @@
     <string name="about_us">Tietoa meistä</string>
     <string name="version">Versio</string>
     <string name="github">GitHub</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Osta minulle kahvi</string>
     <string name="paypal">PayPal</string>
     <string name="title">Otsikko</string>
@@ -257,7 +257,7 @@
     <string name="reload">Lataa uudelleen</string>
     <string name="newer_first">Uusimmat ensin</string>
     <string name="added_date">Lisäyspäivämäärä</string>
-    <string name="credit_app">Yksinkertainen musiikkisovellus, joka käyttää YouTube Musicin taustajärjestelmää \n\nWave Music on avoimen lähdekoodin projekti musiikin suoratoistoon YouTubesta ja YouTube Musicista ilman mainoksia ja seurantaa. Wave Music tarjoaa monia ominaisuuksia:\n\n - Musiikin suoratoisto \n - Synkronoidut sanoitukset\n - Tietojen mukauttaminen\n - jne… \n\nWave Music on aina ilmainen ja vailla mainoksia\n\nTehty ❤️:llä, Pete-Dev</string>
+    <string name="credit_app">Yksinkertainen musiikkisovellus, joka käyttää YouTube Musicin taustajärjestelmää \n\nWave Music on avoimen lähdekoodin projekti musiikin suoratoistoon YouTubesta ja YouTube Musicista ilman mainoksia ja seurantaa. Wave Music tarjoaa monia ominaisuuksia:\n\n - Musiikin suoratoisto \n - Synkronoidut sanoitukset\n - Tietojen mukauttaminen\n - jne… \n\nWave Music on aina ilmainen ja vailla mainoksia\n\nTehty ❤️:llä, petedev</string>
     <string name="issue_tracker">Tikettijärjestelmä</string>
     <string name="featured_playlists">Suositellut soittolistat</string>
     <string name="featured_inArtist">Mukana näissä</string>

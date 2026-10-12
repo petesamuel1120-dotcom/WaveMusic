@@ -121,12 +121,12 @@
     <string name="about_us">Über uns</string>
     <string name="version">Version</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Spendiere mir einen Kaffee</string>
     <string name="developer_blog">Entwickler-Blog</string>
     <string name="developer_blog_tagline">Lesen Sie Entwicklernotizen, Tutorials &amp; hinter den Kulissen</string>
     <string name="blog_promo_title">Neues vom Entwickler</string>
-    <string name="blog_promo_message">Ich habe gerade meinen persönlichen Blog unter maxrave.dev gestartet – dort teile ich die Geschichte hinter Wave Music, ausführliche Einblicke in die Musiktechnologie und technische Notizen. Schaut doch mal rein, wenn ihr neugierig seid ✨</string>
+    <string name="blog_promo_message">Ich habe gerade meinen persönlichen Blog unter petedev gestartet – dort teile ich die Geschichte hinter Wave Music, ausführliche Einblicke in die Musiktechnologie und technische Notizen. Schaut doch mal rein, wenn ihr neugierig seid ✨</string>
     <string name="visit_blog">Blog besuchen</string>
     <string name="paypal">PayPal</string>
     <string name="title">Titel</string>
@@ -282,7 +282,7 @@
     <string name="older_first">Ältere zuerst</string>
     <string name="newer_first">Neue zuerst</string>
     <string name="added_date">Datum hinzugefügt</string>
-    <string name="credit_app">Eine einfache Musik-App mit YouTube Music als Backend \n\nWave Music ist ein Open-Source-Projekt zum Streamen von Musik von YouTube und YouTube Music ohne Werbung und Tracking. Wave Music bietet viele Funktionen:\n\n - Musik streamen \n - Synchronisierte Liedtexte\n - Daten personalisieren\n - etc… \n\nWave Music ist immer kostenlos und ohne Werbung\n\nErstellen Sie mit ❤️ von Pete-Dev</string>
+    <string name="credit_app">Eine einfache Musik-App mit YouTube Music als Backend \n\nWave Music ist ein Open-Source-Projekt zum Streamen von Musik von YouTube und YouTube Music ohne Werbung und Tracking. Wave Music bietet viele Funktionen:\n\n - Musik streamen \n - Synchronisierte Liedtexte\n - Daten personalisieren\n - etc… \n\nWave Music ist immer kostenlos und ohne Werbung\n\nErstellen Sie mit ❤️ von petedev</string>
     <string name="issue_tracker">Issue-Tracker</string>
     <string name="featured_playlists">Empfohlene Playlists</string>
     <string name="featured_inArtist">Zu hören in</string>
@@ -457,8 +457,8 @@
     <string name="other_version">Andere Version</string>
     <string name="later">später</string>
     <string name="give_a_star">Gebe einen Stern</string>
-    <string name="enjoying_simpmusic">Spaß an Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">Wenn dir Wave Music gefällt, gib Wave Music einen Stern auf Github oder lasse eine Rezension da</string>
+    <string name="enjoying_wavemusic">Spaß an Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">Wenn dir Wave Music gefällt, gib Wave Music einen Stern auf Github oder lasse eine Rezension da</string>
     <string name="if_you_love_my_work_consider">"Wenn Dumeine Arbeit liebst, denk darüber nach "</string>
     <string name="buying_me_a_coffee">Mir einen Kaffee zu kaufen.</string>
     <string name="fade_audio_effect">Fade Audioeffekt</string>
@@ -645,7 +645,7 @@
     <string name="local_tracking_description">Zeichne den Wiedergabeverlauf in der lokalen Datenbank auf</string>
     <string name="blog_notification_title">Benachrichtigungen zu Blogbeiträgen</string>
     <string name="blog_notification_description">Werde benachrichtigt wenn ein neuer Blog-Beitrag veröffentlicht wird</string>
-    <string name="simpmusic_charts">Wave-Music-Charts</string>
+    <string name="wavemusic_charts">Wave-Music-Charts</string>
     <string name="crossfading">Crossfading (überblenden)</string>
     <string name="your_320kbps_url">Deine 320kbps URL</string>
     <string name="your_320kbps_url_description">Lassen Sie das Feld leer, damit automatisch eine funktionierende URL aus dem Verfügbarkeitsprüfer ausgewählt wird.</string>
@@ -893,7 +893,7 @@ In Wave Music können nur Playlist-Dateien in unserem eigenen Format importiert 
     <string name="lyrics_provider_unison">Liedtexte von Unison (https://unison.boidu.dev)</string>
     <string name="suggestions">Vorschläge</string>
     <string name="refetch_lyrics">Liedtexte erneut laden</string>
-    <string name="copyright">©2023-%1$s Pete-Dev</string>
+    <string name="copyright">©2023-%1$s petedev</string>
     <string name="podcasts">Podcasts</string>
     <string name="account">Konto</string>
     <string name="log_out_from_youtube">Von YouTube abmelden</string>

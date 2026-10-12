@@ -1,6 +1,6 @@
 package org.simpmusic.lyrics.parser
 
-import com.maxrave.domain.extension.decodeHtmlEntities
+import com.petedev.wavemusic.domain.extension.decodeHtmlEntities
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject

@@ -1,6 +1,6 @@
 package org.simpmusic.lyrics.romanization
 
-import com.maxrave.domain.data.model.lyrics.RomanizationLanguage
+import com.petedev.wavemusic.domain.data.model.lyrics.RomanizationLanguage
 
 /**
  * What a single line is written in. Detected per LINE rather than per song, because a lyric sheet

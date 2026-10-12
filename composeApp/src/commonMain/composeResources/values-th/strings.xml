@@ -121,12 +121,12 @@
     <string name="about_us">เกี่ยวกับเรา</string>
     <string name="version">เวอร์ชัน</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">เลี้ยงกาแฟให้ฉัน</string>
     <string name="developer_blog">บล็อกนักพัฒนา</string>
     <string name="developer_blog_tagline">อ่านบันทึกจากผู้พัฒนา บทแนะนำ &amp; เบื้องหลังการทำงาน</string>
     <string name="blog_promo_title">สิ่งใหม่จากผู้พัฒนา</string>
-    <string name="blog_promo_message">ผมเพิ่งเปิดบล็อกส่วนตัวที่ maxrave.dev
+    <string name="blog_promo_message">ผมเพิ่งเปิดบล็อกส่วนตัวที่ petedev
 เอาไว้แชร์เรื่องราวเบื้องหลัง Wave Music เจาะลึกด้าน music-tech และบันทึกด้านวิศวกรรมต่าง ๆ
 แวะเข้าไปอ่านกันได้ถ้าสนใจ ✨</string>
     <string name="visit_blog">เยี่ยมชมบล็อก</string>
@@ -283,7 +283,7 @@
     <string name="older_first">เรียงจากเก่าไปใหม่</string>
     <string name="newer_first">เรียงจากใหม่ไปเก่า</string>
     <string name="added_date">เพิ่มวันที่</string>
-    <string name="credit_app">แอปเพลงง่ายๆ ที่ใช้ YouTube Music สำหรับแบ็กเอนด์ \n\nWave Music เป็นโครงการโอเพ่นซอร์สสำหรับสตรีมเพลงจาก YouTube และ YouTube Music โดยไม่มีโฆษณาและการติดตาม Wave Music มีคุณสมบัติมากมาย:\n\n - สตรีมเพลง \n - เนื้อเพลงที่ซิงค์กัน\n - ปรับแต่งข้อมูล\n - ฯลฯ…\n\nWave Music ฟรีเสมอและไม่มีโฆษณา\n\nสร้างด้วย ❤️ จาก Pete-Dev</string>
+    <string name="credit_app">แอปเพลงง่ายๆ ที่ใช้ YouTube Music สำหรับแบ็กเอนด์ \n\nWave Music เป็นโครงการโอเพ่นซอร์สสำหรับสตรีมเพลงจาก YouTube และ YouTube Music โดยไม่มีโฆษณาและการติดตาม Wave Music มีคุณสมบัติมากมาย:\n\n - สตรีมเพลง \n - เนื้อเพลงที่ซิงค์กัน\n - ปรับแต่งข้อมูล\n - ฯลฯ…\n\nWave Music ฟรีเสมอและไม่มีโฆษณา\n\nสร้างด้วย ❤️ จาก petedev</string>
     <string name="issue_tracker">ติดตามปัญหา</string>
     <string name="featured_playlists">เพลย์ลิสต์ที่โดดเด่น</string>
     <string name="featured_inArtist">โดดเด่นบน</string>
@@ -436,8 +436,8 @@
     <string name="other_version">เวอร์ชั่นอื่นๆ</string>
     <string name="later">ไว้ที่หลังนะ</string>
     <string name="give_a_star">ให้ดาว</string>
-    <string name="enjoying_simpmusic">กำลังเพลิดเพลินกับ Wave Music</string>
-    <string name="if_you_enjoy_using_simpmusic_star_simpmusic_on_github_or_leave_a_review_on">หากสนุกกับการใช้ Wave Music กรุณากดดาวที่ Wave Music บน GitHub หรือเขียนรีวิวให้ด้วยนะ</string>
+    <string name="enjoying_wavemusic">กำลังเพลิดเพลินกับ Wave Music</string>
+    <string name="if_you_enjoy_using_wavemusic_star_wavemusic_on_github_or_leave_a_review_on">หากสนุกกับการใช้ Wave Music กรุณากดดาวที่ Wave Music บน GitHub หรือเขียนรีวิวให้ด้วยนะ</string>
     <string name="if_you_love_my_work_consider">"ถ้าคุณชอบผลงานของฉัน ลองพิจารณา "</string>
     <string name="buying_me_a_coffee">เลี้ยงกาแฟฉัน</string>
     <string name="fade_audio_effect">เอฟเฟกต์การจางเสียง</string>
@@ -575,7 +575,7 @@
     <string name="local_tracking_description">บันทึกประวัติการฟังไว้ในฐานข้อมูลภายในเครื่อง</string>
     <string name="blog_notification_title">รับการแจ้งเตือนจากบล็อก</string>
     <string name="blog_notification_description">รับการแจ้งเตือนจากบล็อกเมื่อมีบทความใหม่</string>
-    <string name="simpmusic_charts">ชาร์ต Wave Music</string>
+    <string name="wavemusic_charts">ชาร์ต Wave Music</string>
     <string name="crossfading">Crossfading</string>
     <string name="your_320kbps_url">ลิงก์สตรีม 320 kbps ของคุณ</string>
     <string name="your_320kbps_url_description">เว้นว่างไว้เพื่อให้ระบบเลือก URL ที่ใช้งานได้จากตัวตรวจสอบสถานะให้อัตโนมัติ</string>

@@ -1,6 +1,6 @@
 package com.my.kizzy
 
-import com.maxrave.domain.data.entities.SongEntity
+import com.petedev.wavemusic.domain.data.entities.SongEntity
 import com.my.kizzy.rpc.KizzyRPC
 import com.my.kizzy.rpc.RpcImage
 import kotlin.time.Clock
@@ -35,7 +35,7 @@ class DiscordRPC(
             buttons =
                 listOf(
                     "Listen on Wave Music" to "https://simpmusic.org/app/watch?v=${song.videoId}",
-                    "Visit Wave Music" to "https://github.com/petartawfeek-droid/WaveMusic",
+                    "Visit Wave Music" to "https://github.com/petesamuel1120-dotcom/WaveMusic",
                 ),
             type = Type.LISTENING,
             since = currentTime,

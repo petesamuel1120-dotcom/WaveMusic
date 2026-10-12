@@ -1,0 +1,144 @@
+package com.petedev.wavemusic.ui.screen.login
+
+import com.petedev.wavemusic.ui.component.CompactHeaderContentHeight
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import com.petedev.wavemusic.expect.ui.DiscordWebView
+import com.petedev.wavemusic.expect.ui.rememberWebViewState
+import com.petedev.wavemusic.extension.getStringBlocking
+import com.petedev.wavemusic.ui.component.DevLogInBottomSheet
+import com.petedev.wavemusic.ui.component.DevLogInType
+import com.petedev.wavemusic.ui.component.RippleIconButton
+import com.petedev.wavemusic.ui.icon.ArrowBackIosNew
+import com.petedev.wavemusic.ui.icon.LogoDev
+import com.petedev.wavemusic.ui.icon.WaveIcons
+import com.petedev.wavemusic.ui.theme.typo
+import com.petedev.wavemusic.viewModel.LogInViewModel
+import org.jetbrains.compose.resources.stringResource
+import org.koin.compose.koinInject
+import com.petedev.wavemusic.resources.Res
+import com.petedev.wavemusic.resources.log_in_to_discord
+import com.petedev.wavemusic.resources.login_success
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun DiscordLoginScreen(
+    innerPadding: PaddingValues,
+    navController: NavController,
+    viewModel: LogInViewModel = koinInject(),
+    hideBottomNavigation: () -> Unit,
+    showBottomNavigation: () -> Unit,
+) {
+    var devLoginSheet by rememberSaveable {
+        mutableStateOf(false)
+    }
+    // Hide bottom navigation when entering this screen
+    LaunchedEffect(Unit) {
+        hideBottomNavigation()
+    }
+
+    // Show bottom navigation when leaving this screen
+    DisposableEffect(Unit) {
+        onDispose {
+            showBottomNavigation()
+        }
+    }
+
+    val state = rememberWebViewState()
+    Box(modifier = Modifier.fillMaxSize()) {
+        Column {
+            Spacer(
+                Modifier
+                    .size(
+                        innerPadding.calculateTopPadding() + CompactHeaderContentHeight,
+                    ),
+            )
+            // WebView for Discord login
+            DiscordWebView(
+                state,
+                aboveContent = {
+                    if (devLoginSheet) {
+                        DevLogInBottomSheet(
+                            onDismiss = {
+                                devLoginSheet = false
+                            },
+                            onDone = { token ->
+                                devLoginSheet = false
+                                viewModel.saveDiscordToken(token)
+                                viewModel.makeToast(getStringBlocking(Res.string.login_success))
+                                navController.navigateUp()
+                            },
+                            type = DevLogInType.Discord,
+                        )
+                    }
+                }
+            ) { token ->
+                viewModel.saveDiscordToken(token)
+                viewModel.makeToast(getStringBlocking(Res.string.login_success))
+                navController.navigateUp()
+            }
+        }
+        TopAppBar(
+            expandedHeight = CompactHeaderContentHeight,
+            modifier =
+                Modifier
+                    .align(Alignment.TopCenter),
+            title = {
+                Text(
+                    text = stringResource(Res.string.log_in_to_discord),
+                    style = typo().titleMedium,
+                )
+            },
+            navigationIcon = {
+                Box(Modifier.padding(horizontal = 5.dp)) {
+                    RippleIconButton(
+                        WaveIcons.ArrowBackIosNew,
+                        Modifier.size(32.dp),
+                        true,
+                    ) {
+                        navController.navigateUp()
+                    }
+                }
+            },
+            actions = {
+                IconButton(
+                    onClick = {
+                        devLoginSheet = true
+                    },
+                ) {
+                    Icon(
+                        WaveIcons.LogoDev,
+                        "Developer Mode",
+                    )
+                }
+            },
+            colors =
+                TopAppBarDefaults.topAppBarColors(
+                    containerColor = Color.Transparent,
+                ),
+        )
+    }
+}

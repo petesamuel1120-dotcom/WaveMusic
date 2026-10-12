@@ -116,7 +116,7 @@
     <string name="about_us">Tentang kami</string>
     <string name="version">Versi</string>
     <string name="github">Github</string>
-    <string name="maxrave_dev">Pete-Dev</string>
+    <string name="petedev">petedev</string>
     <string name="buy_me_a_coffee">Belikan aku secangkir kopi</string>
     <string name="paypal">PayPal</string>
     <string name="title">Judul</string>
@@ -259,7 +259,7 @@
     <string name="suggest">Saran</string>
     <string name="reload">Memuat ulang</string>
     <string name="added_date">Tanggal ditambahkan</string>
-    <string name="credit_app">Aplikasi musik sederhana yang menggunakan YouTube Music untuk backend \n\nWave Music adalah proyek sumber terbuka untuk streaming musik dari YouTube dan YouTube Music tanpa iklan dan pelacakan. Wave Music menyediakan banyak fitur:\n\n - Streaming musik\n - Lirik yang disinkronkan\n - Personalisasi data\n - dll... \n\nWave Music selalu gratis dan tidak ada iklan\n\nDibangun dengan ❤️ oleh Pete-Dev</string>
+    <string name="credit_app">Aplikasi musik sederhana yang menggunakan YouTube Music untuk backend \n\nWave Music adalah proyek sumber terbuka untuk streaming musik dari YouTube dan YouTube Music tanpa iklan dan pelacakan. Wave Music menyediakan banyak fitur:\n\n - Streaming musik\n - Lirik yang disinkronkan\n - Personalisasi data\n - dll... \n\nWave Music selalu gratis dan tidak ada iklan\n\nDibangun dengan ❤️ oleh petedev</string>
     <string name="issue_tracker">Pelacak Masalah</string>
     <string name="featured_playlists">Rekomendasi Playlist</string>
     <string name="featured_inArtist">Termasuk di</string>

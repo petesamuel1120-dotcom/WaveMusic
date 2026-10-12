@@ -18,7 +18,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.maxrave.media3"
+    namespace = "com.petedev.wavemusic.media3"
     compileSdk = 37
 
     defaultConfig {

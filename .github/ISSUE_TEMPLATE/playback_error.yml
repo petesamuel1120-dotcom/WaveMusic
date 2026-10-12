@@ -22,7 +22,7 @@ body:
     id: latest_release
     attributes:
       label: Latest Release
-      description: Check the [Releases page](https://github.com/maxrave-dev/SimpMusic/releases) — this may already be fixed.
+      description: Check the [Releases page](https://github.com/petesamuel1120-dotcom/WaveMusic/releases) — this may already be fixed.
       options:
         - label: I confirm I am on the latest release and the problem still happens.
           required: true

@@ -119,7 +119,7 @@
 -keep class org.mozilla.classfile.ClassFileWriter
 -dontwarn org.mozilla.javascript.tools.**
 
--keep class com.maxrave.kotlinytmusicscraper.** { *; }
+-keep class com.petedev.wavemusic.kotlinytmusicscraper.** { *; }
 
 -keep class com.liskovsoft.**
 

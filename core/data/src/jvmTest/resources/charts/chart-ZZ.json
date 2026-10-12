@@ -1,0 +1,327 @@
+{
+  "responseContext": {},
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "content": {
+              "sectionListRenderer": {
+                "contents": [
+                  {
+                    "musicCarouselShelfRenderer": {
+                      "header": {
+                        "musicCarouselShelfBasicHeaderRenderer": {
+                          "title": {
+                            "runs": [
+                              {
+                                "text": "Video charts"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "contents": [
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/pSK20JECDBCbjZy_uvfrlVasnwg9DjjNrPS7qDtoRoNWy7heftvYc4khasN7VVT4hB0xtYiZNUA=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/pSK20JECDBCbjZy_uvfrlVasnwg9DjjNrPS7qDtoRoNWy7heftvYc4khasN7VVT4hB0xtYiZNUA=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "COQCEIS_AiITCLKgg-ywsJcDFdTuSQcdTj8RBQ=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Daily Top Music Videos - Global",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn6t3TXLGiiJdD-sZbrG3tG0",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn6t3TXLGiiJdD-sZbrG3tG0",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/ryxfZYC_Wh-uLcOccpzrJcSZhjpPbLsHzhCkfZush1itnA8_Kui6E4Ali38cNnI2FBX7P3qZcEY=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/ryxfZYC_Wh-uLcOccpzrJcSZhjpPbLsHzhCkfZush1itnA8_Kui6E4Ali38cNnI2FBX7P3qZcEY=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CNUCEIS_AiITCLKgg-ywsJcDFdTuSQcdTj8RBQ=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 100 Music Videos Global",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn5kI81J1fYWK5eZRl1zJ5kM",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn5kI81J1fYWK5eZRl1zJ5kM",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "itemSize": "COLLECTION_STYLE_ITEM_SIZE_MEDIUM"
+                    }
+                  },
+                  {
+                    "musicCarouselShelfRenderer": {
+                      "header": {
+                        "musicCarouselShelfBasicHeaderRenderer": {
+                          "title": {
+                            "runs": [
+                              {
+                                "text": "Top artists"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "contents": [
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://lh3.googleusercontent.com/_wPXKRCH5rAX8AK1kJZ1bNhSpNyyEgBRNmREdPmLbvTy3sX_ldiKMRYFc5uChygV_KRx_SDrH1KgUifk=w60-h60-p-l90-rj",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://lh3.googleusercontent.com/_wPXKRCH5rAX8AK1kJZ1bNhSpNyyEgBRNmREdPmLbvTy3sX_ldiKMRYFc5uChygV_KRx_SDrH1KgUifk=w120-h120-p-l90-rj",
+                                      "width": 120,
+                                      "height": 120
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_CIRCLE",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CMQCEIS_AiITCLKgg-ywsJcDFdTuSQcdTj8RBQ=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Alka Yagnik"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "2.28M subscribers"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "UCptBkLZ6XRxoyn8SkUMc_Iw",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://lh3.googleusercontent.com/coesV4OVEVkua3_wJG-2BVvTc95yHF9sS1W6mOAtl4-vvTjQb250Hy_nVlfvudmEugb7_k05vhY9aJm4=w60-h60-l90-rj",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://lh3.googleusercontent.com/coesV4OVEVkua3_wJG-2BVvTc95yHF9sS1W6mOAtl4-vvTjQb250Hy_nVlfvudmEugb7_k05vhY9aJm4=w120-h120-l90-rj",
+                                      "width": 120,
+                                      "height": 120
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_CIRCLE",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CLwCEIS_AiITCLKgg-ywsJcDFdTuSQcdTj8RBQ=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Udit Narayan"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "3.93M subscribers"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "UC13ToEQgfmTe8_GW19LYtCg",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "itemSize": "COLLECTION_STYLE_ITEM_SIZE_MEDIUM"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

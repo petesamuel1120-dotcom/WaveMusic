@@ -1,8 +1,8 @@
 package org.simpmusic.lyrics
 
-import com.maxrave.ktorext.crypto.Hmac
-import com.maxrave.ktorext.crypto.HmacUri
-import com.maxrave.logger.Logger
+import com.petedev.wavemusic.ktorext.crypto.Hmac
+import com.petedev.wavemusic.ktorext.crypto.HmacUri
+import com.petedev.wavemusic.logger.Logger
 import io.ktor.client.call.body
 import io.ktor.client.statement.HttpResponse
 import io.ktor.client.statement.bodyAsText

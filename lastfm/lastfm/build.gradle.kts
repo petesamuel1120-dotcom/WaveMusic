@@ -9,7 +9,7 @@ plugins {
 
 kotlin {
     android {
-        namespace = "org.simpmusic.lastfm"
+        namespace = "com.petedev.wavemusic.lastfm"
         compileSdk = 37
         minSdk = 26
     }

@@ -1,0 +1,1275 @@
+{
+  "responseContext": {},
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "content": {
+              "sectionListRenderer": {
+                "contents": [
+                  {
+                    "musicCarouselShelfRenderer": {
+                      "header": {
+                        "musicCarouselShelfBasicHeaderRenderer": {
+                          "title": {
+                            "runs": [
+                              {
+                                "text": "Video charts"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "contents": [
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/mNvj5wKy9OYhTWOrXQeTmpXc26LZeVBtpc3NaU5zOsw-vNW_ltSq5PfD-n6uayyepBVGUYyqog=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/mNvj5wKy9OYhTWOrXQeTmpXc26LZeVBtpc3NaU5zOsw-vNW_ltSq5PfD-n6uayyepBVGUYyqog=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CNwGEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 100 Live Performances - United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn4yCNzulPkUbxgr4pl0gmI-",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn4yCNzulPkUbxgr4pl0gmI-",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/7dQmRjMI02ay8NePiXdjHlbXwb4xlzg12bvScvua5Hqo4ldaf_mgWAS1_3IdZcFql-4kAARLfyA=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/7dQmRjMI02ay8NePiXdjHlbXwb4xlzg12bvScvua5Hqo4ldaf_mgWAS1_3IdZcFql-4kAARLfyA=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CM0GEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Trending 20 United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLOLAK5uy_kNWGJvgWVqlt5LsFDL9Sdluly4M8TvGkM",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLOLAK5uy_kNWGJvgWVqlt5LsFDL9Sdluly4M8TvGkM",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/0A8w-No9uJPv8vNeGT8dZN39m1NzIYpaJGwirvwKoq_jIzKSB9sR94G99id0XDWsq5Er8bDfFpY=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/0A8w-No9uJPv8vNeGT8dZN39m1NzIYpaJGwirvwKoq_jIzKSB9sR94G99id0XDWsq5Er8bDfFpY=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CL4GEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Daily Top Music Videos - United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn61unMfmrUSz68RT8IFFnks",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn61unMfmrUSz68RT8IFFnks",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/fgrJBM5yJ3LeJLtCVuu8CbGEULoe-NEbp_NP3LXsC1bnENIYkjrLCqgUxoxYi8yCdnVpEc2x9iE=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/fgrJBM5yJ3LeJLtCVuu8CbGEULoe-NEbp_NP3LXsC1bnENIYkjrLCqgUxoxYi8yCdnVpEc2x9iE=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CK8GEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 100 Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn69On1f-8NAvX_CYlx7QyZc",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn69On1f-8NAvX_CYlx7QyZc",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "itemSize": "COLLECTION_STYLE_ITEM_SIZE_MEDIUM"
+                    }
+                  },
+                  {
+                    "musicCarouselShelfRenderer": {
+                      "header": {
+                        "musicCarouselShelfBasicHeaderRenderer": {
+                          "title": {
+                            "runs": [
+                              {
+                                "text": "Genres"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "contents": [
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/eKor1NGZBd4VADO6Ak5Z1UEXEfd0BagZSKiGK1BYs5kh8Uqf579b6RdImxBuHrORFLJitp7SUw=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/eKor1NGZBd4VADO6Ak5Z1UEXEfd0BagZSKiGK1BYs5kh8Uqf579b6RdImxBuHrORFLJitp7SUw=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CJ4GEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Jazz Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn7Wkr6Ll6ds1AhA42rT8uaU",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn7Wkr6Ll6ds1AhA42rT8uaU",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/BbdooLwKKZamdn3o2UFVuvZuYes8bJv4n1Da1jWCkqqdIKAKY3xkgRi8FXOekPoRLEk_9GBk8SA=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/BbdooLwKKZamdn3o2UFVuvZuYes8bJv4n1Da1jWCkqqdIKAKY3xkgRi8FXOekPoRLEk_9GBk8SA=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CI8GEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Hard Rock & Metal Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn4w4wTTgOmP_S80PoCtbGrL",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn4w4wTTgOmP_S80PoCtbGrL",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/41Vluvlp8tPpbLGMgwLFuI2hFXRtaAUNlEPff67UQr2lAtueJcJEVUbNt9M8yLt3H6dA8obqhg=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/41Vluvlp8tPpbLGMgwLFuI2hFXRtaAUNlEPff67UQr2lAtueJcJEVUbNt9M8yLt3H6dA8obqhg=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CIAGEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Country & Americana Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn4EBsWVeFpcSAVOFMfhyipg",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn4EBsWVeFpcSAVOFMfhyipg",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/RMpfCQ3vBMcvUv4zJr9R9O7eHVsQYQ_Qls43JldcPRLLh11TcR3UaNLsAwv7JckMKjwyj7tVsEe7=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/RMpfCQ3vBMcvUv4zJr9R9O7eHVsQYQ_Qls43JldcPRLLh11TcR3UaNLsAwv7JckMKjwyj7tVsEe7=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CPEFEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Rock Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn5LOptOQixqnzXNGjNXAgYY",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn5LOptOQixqnzXNGjNXAgYY",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/ytkzmQm3RixSrzHgiJNvVNj8wJIrSVne8mUjf2dUuY11JPUcaVzBtWSlb_E6tSAwuT98WGqaIEI=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/ytkzmQm3RixSrzHgiJNvVNj8wJIrSVne8mUjf2dUuY11JPUcaVzBtWSlb_E6tSAwuT98WGqaIEI=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "COIFEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Hip Hop Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn4fmCoF1vKHLtivI0f9yHiF",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn4fmCoF1vKHLtivI0f9yHiF",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/4o2nTIGElf2ak4c1DxRVrEyNpXJ9MXmMgVxFh0R60_Evn0ShV4Ssz5U735y3DmCiStUMuxdc_Q=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/4o2nTIGElf2ak4c1DxRVrEyNpXJ9MXmMgVxFh0R60_Evn0ShV4Ssz5U735y3DmCiStUMuxdc_Q=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CNMFEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Latin Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn5O8siDeZuI_4hbk6JWtTX1",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn5O8siDeZuI_4hbk6JWtTX1",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/puTa5tsjjculr7JcXqErRHmIKXdCMTzOz4DOVh1fIx_iiSXYrs_VuEeEYMzAHrvz6HT4t-TSV2k=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/puTa5tsjjculr7JcXqErRHmIKXdCMTzOz4DOVh1fIx_iiSXYrs_VuEeEYMzAHrvz6HT4t-TSV2k=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CMQFEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Pop Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn77aK7sAW2AT0oOzo5inWY8",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn77aK7sAW2AT0oOzo5inWY8",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicTwoRowItemRenderer": {
+                            "thumbnailRenderer": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/uAv8_RTHxiXTpqcl8J12Fv7fj6ZNJRNktJB5R2POhUkS9fWqN-pwk5_Iltr8PikM0kqE2TRqzg=s192",
+                                      "width": 192,
+                                      "height": 192
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/uAv8_RTHxiXTpqcl8J12Fv7fj6ZNJRNktJB5R2POhUkS9fWqN-pwk5_Iltr8PikM0kqE2TRqzg=s576",
+                                      "width": 576,
+                                      "height": 576
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CLUFEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Top 50 Dance & Electronic Music Videos United States",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "VLPL4fGSI1pDJn4rBU0RHnR6-b1_uE20CzRH",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "subtitle": {
+                              "runs": [
+                                {
+                                  "text": "Chart"
+                                },
+                                {
+                                  "text": " • "
+                                },
+                                {
+                                  "text": "YouTube Charts",
+                                  "navigationEndpoint": {
+                                    "browseEndpoint": {
+                                      "browseId": "FEmusic_charts",
+                                      "browseEndpointContextSupportedConfigs": {
+                                        "browseEndpointContextMusicConfig": {
+                                          "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "VLPL4fGSI1pDJn4rBU0RHnR6-b1_uE20CzRH",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PLAYLIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "itemSize": "COLLECTION_STYLE_ITEM_SIZE_MEDIUM"
+                    }
+                  },
+                  {
+                    "musicCarouselShelfRenderer": {
+                      "header": {
+                        "musicCarouselShelfBasicHeaderRenderer": {
+                          "title": {
+                            "runs": [
+                              {
+                                "text": "Top artists"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "contents": [
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/MxNjcRJ-uK4Xvx7u90IhEFLQM8x9LIGTA9VCKHq5U4Wn2jOgiWaMtg-qz329SIzqnCyhdCCB3MpdAGs=w60-h60-p-l90-rj",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/MxNjcRJ-uK4Xvx7u90IhEFLQM8x9LIGTA9VCKHq5U4Wn2jOgiWaMtg-qz329SIzqnCyhdCCB3MpdAGs=w120-h120-p-l90-rj",
+                                      "width": 120,
+                                      "height": 120
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_CIRCLE",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CKQFEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Drake"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "33.2M subscribers"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "UCU6cE7pdJPc6DU2jSrKEsdQ",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/Gn429K9WtTL6JcxQ3IKtY_pxlt8kk1MwXhhEp0_GhimPo9-lpmzuvcJcIKpNPN1gAda7pfcW=w60-h60-l90-rj",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://yt3.googleusercontent.com/Gn429K9WtTL6JcxQ3IKtY_pxlt8kk1MwXhhEp0_GhimPo9-lpmzuvcJcIKpNPN1gAda7pfcW=w120-h120-l90-rj",
+                                      "width": 120,
+                                      "height": 120
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_CIRCLE",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FILL",
+                                "trackingParams": "CJwFEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "YoungBoy Never Broke Again"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "15.8M subscribers"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "UCR28YDxjDE3ogQROaNdnRbQ",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "itemSize": "COLLECTION_STYLE_ITEM_SIZE_MEDIUM"
+                    }
+                  },
+                  {
+                    "musicCarouselShelfRenderer": {
+                      "header": {
+                        "musicCarouselShelfBasicHeaderRenderer": {
+                          "title": {
+                            "runs": [
+                              {
+                                "text": "Weekly top podcast shows"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "contents": [
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PLzJVLNWKVr6ksDjycE7NpSptOlcaEP-jQ/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEICDwQPCAASFqi85f_AwYI__nU1QY&rs=AMzJL3nGL5jrk9tPJ-rz-plZAQ0BXcJQfw",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PLzJVLNWKVr6ksDjycE7NpSptOlcaEP-jQ/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEICHgQeCAASFqi85f_AwYI__nU1QY&rs=AMzJL3ldYlmgAfnyw0e3y62y-6Q5DtmiEA",
+                                      "width": 120,
+                                      "height": 120
+                                    },
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PLzJVLNWKVr6ksDjycE7NpSptOlcaEP-jQ/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEKCOIBEOIBIABIWqLzl_8DBgj_-dTVBg&rs=AMzJL3nsYHKOWaxWqLPmHi5A6po5MKnxXw",
+                                      "width": 226,
+                                      "height": 226
+                                    },
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PLzJVLNWKVr6ksDjycE7NpSptOlcaEP-jQ/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEKCKAEEKAEIABIWqLzl_8DBgj_-dTVBg&rs=AMzJL3liGikk0m7Ma1K-B9e-Nye1hjcnvw",
+                                      "width": 544,
+                                      "height": 544
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FIT",
+                                "trackingParams": "COICEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Financial Audit"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Caleb Hammer",
+                                        "navigationEndpoint": {
+                                          "browseEndpoint": {
+                                            "browseId": "UCLe_q9axMaeTbjN0hy1Z9xA",
+                                            "browseEndpointContextSupportedConfigs": {
+                                              "browseEndpointContextMusicConfig": {
+                                                "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "MPSPPLzJVLNWKVr6ksDjycE7NpSptOlcaEP-jQ",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PODCAST_SHOW_DETAIL_PAGE"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "musicResponsiveListItemRenderer": {
+                            "thumbnail": {
+                              "musicThumbnailRenderer": {
+                                "thumbnail": {
+                                  "thumbnails": [
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PL4pqo9Uoh0WuUKxw0BmaK1yrg9Kd7E4lk/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEICDwQPCAASFqi85f_AwYIx6PUrwY&rs=AMzJL3nSyHKVvNvMXi_T1dfu-vgV1Szz_w",
+                                      "width": 60,
+                                      "height": 60
+                                    },
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PL4pqo9Uoh0WuUKxw0BmaK1yrg9Kd7E4lk/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEICHgQeCAASFqi85f_AwYIx6PUrwY&rs=AMzJL3nSH-mLXx2W6lprnOkluNydMe0UHA",
+                                      "width": 120,
+                                      "height": 120
+                                    },
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PL4pqo9Uoh0WuUKxw0BmaK1yrg9Kd7E4lk/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEKCOIBEOIBIABIWqLzl_8DBgjHo9SvBg&rs=AMzJL3nogJLLFltp5mFOdex-yxS1xNXcOw",
+                                      "width": 226,
+                                      "height": 226
+                                    },
+                                    {
+                                      "url": "https://i.ytimg.com/pl_c/PL4pqo9Uoh0WuUKxw0BmaK1yrg9Kd7E4lk/studio_square_thumbnail.jpg?sqp=CImlrNYG-oaymwEKCKAEEKAEIABIWqLzl_8DBgjHo9SvBg&rs=AMzJL3lf_thH2um7q5PTsl2PdIswbMuBuw",
+                                      "width": 544,
+                                      "height": 544
+                                    }
+                                  ]
+                                },
+                                "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                                "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FIT",
+                                "trackingParams": "CNsCEIS_AiITCOjK0JySsZcDFVky8QUdUVwegg=="
+                              }
+                            },
+                            "flexColumns": [
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Shawn Ryan Show"
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              },
+                              {
+                                "musicResponsiveListItemFlexColumnRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Shawn Ryan Show",
+                                        "navigationEndpoint": {
+                                          "browseEndpoint": {
+                                            "browseId": "UCkoujZQZatbqy4KGcgjpVxQ",
+                                            "browseEndpointContextSupportedConfigs": {
+                                              "browseEndpointContextMusicConfig": {
+                                                "pageType": "MUSIC_PAGE_TYPE_USER_CHANNEL"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                                }
+                              }
+                            ],
+                            "navigationEndpoint": {
+                              "browseEndpoint": {
+                                "browseId": "MPSPPL4pqo9Uoh0WuUKxw0BmaK1yrg9Kd7E4lk",
+                                "browseEndpointContextSupportedConfigs": {
+                                  "browseEndpointContextMusicConfig": {
+                                    "pageType": "MUSIC_PAGE_TYPE_PODCAST_SHOW_DETAIL_PAGE"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "itemSize": "COLLECTION_STYLE_ITEM_SIZE_MEDIUM"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
